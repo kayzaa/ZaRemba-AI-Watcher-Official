@@ -1,0 +1,3 @@
+# Signed data must stay byte-identical on every OS (no CRLF conversion).
+intel/** -text
+*.sig -text
