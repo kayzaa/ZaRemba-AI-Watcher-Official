@@ -1,0 +1,19 @@
+name: 🎯 False positive
+description: ZaRemba flagged something that is safe.
+labels: ["false-positive"]
+body:
+  - type: input
+    id: rule
+    attributes: { label: Rule ID, placeholder: "ZRW-MCP-003" }
+    validations: { required: true }
+  - type: input
+    id: item
+    attributes: { label: Flagged item, description: "Name of the MCP server, skill, package or setting", placeholder: "my-mcp-server@1.2.3" }
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes: { label: "Why is it safe?", description: "Links to the official source, publisher, docs …" }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: ZaRemba version, placeholder: "0.1.0" }

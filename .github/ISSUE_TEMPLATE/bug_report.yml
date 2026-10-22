@@ -1,0 +1,24 @@
+name: 🐞 Bug report
+description: Something does not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping improve ZaRemba! **Never paste API keys or passwords.**"
+  - type: input
+    id: version
+    attributes: { label: ZaRemba version, description: "Output of `zaremba --version`", placeholder: "zaremba 0.1.0" }
+    validations: { required: true }
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: ["Windows 11", "Windows 10", "macOS (Apple Silicon)", "macOS (Intel)", "Linux", "Other"]
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: "What happened?", description: "What did you do, what did you expect, what happened instead?" }
+    validations: { required: true }
+  - type: textarea
+    id: output
+    attributes: { label: Output, description: "Relevant output. Remove personal data first.", render: text }

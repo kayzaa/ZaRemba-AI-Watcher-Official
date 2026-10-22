@@ -1,0 +1,26 @@
+name: ☠️ Threat report
+description: Report a malicious AI extension, MCP server, agent skill, package or fake AI app.
+labels: ["threat-intel"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you – every report protects other users.
+        **Do not attach live malware.** Names, versions, links and hashes are enough.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options: ["MCP server", "Agent skill / plugin", "npm package", "PyPI package", "Browser extension", "Fake AI app", "Other"]
+    validations: { required: true }
+  - type: input
+    id: name
+    attributes: { label: Name and affected versions, placeholder: "evil-mcp@1.0.4 – 1.0.7" }
+    validations: { required: true }
+  - type: textarea
+    id: behaviour
+    attributes: { label: "What does it do?", description: "e.g. sends e-mails to a third party, steals wallet keys, downloads an installer …" }
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes: { label: Evidence and sources, description: "Links to analyses, advisories, registry pages, SHA-256 hashes" }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-128 -128 256 256" role="img" aria-label="ZaRemba AI Watcher logo">
+  <defs><linearGradient id="cy" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#00a3ff"/></linearGradient></defs>
+  <rect x="-128" y="-128" width="256" height="256" rx="48" fill="#05080f"/>
+  <path d="M0-96 78-66V-6C78 44 44 82 0 100-44 82-78 44-78-6V-66Z" fill="none" stroke="url(#cy)" stroke-width="8"/>
+  <ellipse cx="0" cy="0" rx="46" ry="26" fill="none" stroke="#e8f7ff" stroke-width="6"/>
+  <circle cx="0" cy="0" r="14" fill="#f5c542"/><circle cx="0" cy="0" r="5" fill="#05080f"/>
+</svg>

@@ -1,0 +1,17 @@
+name: 💡 Feature request
+description: Suggest an idea for ZaRemba.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: "What problem should ZaRemba solve?", placeholder: "I use agent X and I'm worried that …" }
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes: { label: Your idea }
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options: ["Windows", "macOS", "Linux", "Android", "iPhone / iPad", "Browser"]
