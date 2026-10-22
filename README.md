@@ -281,7 +281,7 @@ agents, their extensions and their permissions.
 <details>
 <summary><b>Is it free?</b></summary>
 
-Yes. The scanner is free for personal use. See the [license](LICENSE).
+Yes. The desktop app, command line, browser extension and Android app are free for personal use. See the [license](LICENSE).
 </details>
 
 <details>
@@ -302,8 +302,19 @@ App updates are always signed with ZaRemba's own release key and verified before
 <details>
 <summary><b>Does it work on my phone?</b></summary>
 
-Not yet. Android is planned. On iPhone and iPad, Apple does not allow apps to scan other apps, so protection there will
-focus on browser, links and media. See the [roadmap](ROADMAP.md).
+**Android: yes.** Download the [Android app](docs/ANDROID.md) (Android 8+) from the release page – it finds fake AI
+apps, screen-control trojans and hidden AI instructions in any text. A Google Play version is planned.
+
+**iPhone and iPad: not yet.** Apple does not allow apps to scan other apps, so protection there will focus on browser,
+links and media. See the [roadmap](ROADMAP.md).
+</details>
+
+<details>
+<summary><b>Does it protect my browser?</b></summary>
+
+Yes – the [browser extension](docs/BROWSER_EXTENSION.md) for Chrome, Edge, Brave, Opera and Firefox finds hidden
+instructions aimed at AI browsers, stops secrets from being pasted into AI chats and checks for known malicious AI
+extensions. It is a developer preview for now; store versions are coming.
 </details>
 
 <details>
