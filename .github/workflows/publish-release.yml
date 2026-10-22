@@ -1,0 +1,37 @@
+name: Publish release
+
+# Turns the binaries in downloads/<version>/ into an official GitHub Release.
+# Triggered when a new version folder is pushed, or manually.
+on:
+  push:
+    branches: [main]
+    paths: ["downloads/**", "release-notes/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read version
+        id: v
+        run: echo "version=$(tr -d '[:space:]' < downloads/LATEST)" >> "$GITHUB_OUTPUT"
+      - name: Verify checksums
+        working-directory: downloads/${{ steps.v.outputs.version }}
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Create or update release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.v.outputs.version }}
+        run: |
+          dir="downloads/$VERSION"
+          notes="release-notes/$VERSION.md"
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            gh release edit "$VERSION" --notes-file "$notes"
+            gh release upload "$VERSION" "$dir"/* --clobber
+          else
+            gh release create "$VERSION" "$dir"/* --title "ZaRemba AI Watcher ${VERSION#v} – Developer Preview" --notes-file "$notes" --target "$GITHUB_SHA" --latest
+          fi
