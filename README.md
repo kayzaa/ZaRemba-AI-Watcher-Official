@@ -280,7 +280,7 @@ agents, their extensions and their permissions.
 <details>
 <summary><b>Is it free?</b></summary>
 
-Yes. The desktop app, command line, browser extension and Android app are free for personal use. See the [license](LICENSE).
+Yes. The desktop app, command line, browser extension and Android app are free – for personal and commercial use. See the [license](LICENSE).
 </details>
 
 <details>
