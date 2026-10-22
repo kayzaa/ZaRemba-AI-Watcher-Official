@@ -7,7 +7,7 @@
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0b1626?style=for-the-badge">
   <img alt="Price" src="https://img.shields.io/badge/price-free-f5c542?style=for-the-badge">
   <img alt="Privacy" src="https://img.shields.io/badge/privacy-100%25%20local-2ea043?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/status-developer%20preview-8957e5?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/version-0.2.0%20preview-8957e5?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@ assistants and abuse permissions you granted. **ZaRemba AI Watcher is built only
 
 ## 📥 Download
 
-> **Developer Preview 0.1** – a fast command-line scanner. The desktop app with one-click protection is on the
+> **Developer Preview 0.2** – a fast command-line scanner with AI Tripwire. The desktop app with one-click protection is on the
 > [roadmap](ROADMAP.md).
 
 | System | Download | Notes |
@@ -79,13 +79,19 @@ tar -xzf zaremba-*.tar.gz
 ./zaremba scan
 ```
 
-Useful options:
+Useful commands:
 ```text
 zaremba scan                       Show problems only
 zaremba scan --all                 Full AI inventory: every agent, MCP server and skill
 zaremba scan -p ~/code/my-project  Also check a project folder (.mcp.json, .env, packages)
 zaremba scan --json                Machine-readable report (for scripts and CI)
+
+zaremba tripwire install           Lay out decoy wallets, passwords and API keys (all fake)
+zaremba tripwire watch             Live alarm the moment a decoy is touched
+zaremba tripwire status            Check whether any decoy was changed or deleted
+zaremba tripwire remove            Remove the decoys again
 ```
+New in 0.2: **[AI Tripwire guide](docs/TRIPWIRE.md)**
 
 Example result:
 ```text
@@ -118,7 +124,7 @@ Exit codes for scripts and CI: `0` nothing to fix · `1` issues found · `2` cri
 | ⚙️ **Risky agent settings** | Agents allowed to act with **no permission prompts** or with the sandbox switched off | ✅ Available |
 | 🔑 **Exposed AI keys** | OpenAI, Anthropic, Google AI, Hugging Face, OpenRouter and GitHub keys lying in shell profiles and `.env` files | ✅ Available |
 | 📦 **Poisoned packages** | Known malicious npm packages (global and in your projects) | ✅ Available |
-| 🪤 **AI Tripwire** | Decoy wallets, passwords and keys that only thieves touch – instant alarm | 🔨 In development |
+| 🪤 **AI Tripwire** | Decoy wallets, passwords and keys that only thieves touch – instant alarm, names the program on Linux | ✅ Available (0.2) |
 | 🌐 **AI Network Watch** | Alerts when an unknown program secretly talks to AI services | 🗓️ Planned |
 | 🛑 **Real-time Agent Guard** | Blocks AI agents from touching wallets, SSH keys and browser passwords | 🗓️ Planned |
 | 🖥️ **Desktop app** | One-click protection, tray icon, notifications | 🗓️ Planned |
@@ -131,7 +137,8 @@ Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes
 ## 🔒 Privacy by design
 
 - **Runs 100 % on your device.** No account, no cloud upload, no telemetry.
-- **Read-only.** The scanner never changes, deletes or moves your files.
+- **Read-only scan.** `zaremba scan` never changes, deletes or moves your files. AI Tripwire only creates its own decoy
+  files, never overwrites anything, and removes them again on request.
 - **Secrets stay secret.** Keys are never printed – only a short redacted hint like `sk-pro…(33 chars)`.
 - **No internet needed.** The threat database is built in.
 
@@ -142,9 +149,9 @@ Details: **[Privacy policy](PRIVACY.md)**
 ## 🗺️ Roadmap at a glance
 
 ```text
- ✅ v0.1  AI Inventory Scanner          ← you are here
- 🔨 v0.2  AI Tripwire (decoy files)
- 🗓️ v0.3  AI Network Watch
+ ✅ v0.1  AI Inventory Scanner
+ ✅ v0.2  AI Tripwire (decoy files)       ← you are here
+ 🔨 v0.3  AI Network Watch
  🗓️ v0.4  Real-time Agent Guard + MCP Firewall
  🗓️ v1.0  Desktop app for Windows & macOS (signed installer)
  🗓️ v1.x  Android · browser extension · iPhone/iPad

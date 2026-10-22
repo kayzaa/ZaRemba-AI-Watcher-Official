@@ -26,13 +26,14 @@ _Last updated: October 2026_
 - ✅ Text and JSON reports, exit codes for scripts and CI
 - ✅ Windows, macOS (Apple Silicon + Intel), Linux
 
-## 🔨 v0.2 – AI Tripwire · *in development*
-- 🔨 Decoy files that look like crypto wallets, password lists, `.env` files and AI keys
-- 🔨 Instant alarm when any program or AI agent opens them – shows *which* program did it
-- 🗓️ Optional "AI tripwire" text inside decoys that makes a reading AI reveal itself
-- 🗓️ One command to install, check and remove all decoys
+## ✅ v0.2 – AI Tripwire · October 2026
+- ✅ Decoy files that look like a crypto wallet recovery phrase, a password list, a production `.env` file and API keys – all fake
+- ✅ Live alarm when a decoy is changed, moved or deleted (Windows, macOS, Linux)
+- ✅ Linux: alarm when a decoy is merely **opened**, including *which* program did it
+- ✅ One command each to install, check, watch and remove; changed decoys are kept as evidence
+- ✅ Tripwire state and alarms show up in every `zaremba scan`
 
-## 🗓️ v0.3 – AI Network Watch
+## 🔨 v0.3 – AI Network Watch · *in development*
 - 🗓️ Shows which program talks to which AI service (OpenAI, Anthropic, Google, Hugging Face, OpenRouter …)
 - 🗓️ Alarm when an unknown program secretly calls an AI service – the pattern used by AI-powered malware
 - 🗓️ Allow-list for the AI apps you trust
@@ -44,6 +45,7 @@ _Last updated: October 2026_
 - 🗓️ Integrations through official agent hooks – no hacks
 
 ## 🗓️ v1.0 – Desktop App · Windows & macOS
+- 🗓️ Tripwire read-detection on Windows and macOS (driver / Endpoint Security)
 - 🗓️ Beautiful app with one-click scan and live protection
 - 🗓️ Background service, tray icon and notifications
 - 🗓️ Signed installers (Windows code signing, Apple notarization)

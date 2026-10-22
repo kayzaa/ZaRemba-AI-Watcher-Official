@@ -62,7 +62,7 @@ Preview builds are not yet code-signed. Code signing and notarization come with 
   `xattr -d com.apple.quarantine zaremba` once, or open **System Settings → Privacy & Security** and click **Open Anyway**.
 
 ## Uninstall
-Delete the `zaremba` file. ZaRemba 0.1 stores nothing else on your computer.
+Run `zaremba tripwire remove` if you installed the tripwire, then delete the `zaremba` file and the `.zaremba` folder in your home directory.
 
 ## Need help?
 See [SUPPORT.md](../SUPPORT.md).

@@ -53,6 +53,14 @@ Detected key types: OpenAI, Anthropic, Google AI (Gemini), Hugging Face, OpenRou
 |---|---|---|
 | `ZRW-PKG-001` | CRITICAL | A known malicious npm package version is installed |
 
+## AI Tripwire
+| Rule | Severity | What it means |
+|---|---|---|
+| `ZRW-TRP-001` | INFO | A decoy is armed and untouched |
+| `ZRW-TRP-002` | HIGH | A decoy file was changed |
+| `ZRW-TRP-003` | HIGH | A decoy file was deleted or moved |
+| `ZRW-TRP-004` | HIGH | Live tripwire alarms were recorded |
+
 ## Threat database
 The built-in database covers publicly documented incidents, for example the **s1ngularity / Nx** supply-chain attack and the
 **postmark-mcp** malicious MCP server. Know of another one?
