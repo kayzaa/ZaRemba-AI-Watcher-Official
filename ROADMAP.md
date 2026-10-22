@@ -69,6 +69,14 @@ _Last updated: October 2026 (v1.1.0)_
 - 🔨 Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons (automatic updates)
 - 🗓️ Signed live updates of the malicious-extension list, Firefox extension IDs
 
+## ✅ Android app 1.0 · October 2026 · *APK on GitHub*
+- ✅ Fake AI app check: apps posing as ChatGPT, Claude, Gemini, DeepSeek, Grok, Copilot, Perplexity, Meta AI, Mistral, Poe, Character.AI, Kimi or Qwen
+- ✅ Known malicious apps from public reports (e.g. the fake DeepSeek banking trojan)
+- ✅ Apps from outside a store with screen control (Accessibility), device admin, notification or SMS access
+- ✅ AI apps overview with access rights · check any text for hidden AI instructions (Share → ZaRemba)
+- ✅ Background checks with alerts, update check
+- 🗓️ Google Play release · signed live threat updates · AI network watch (local VPN, opt-in)
+
 ## 🗓️ Trust & depth
 - 🗓️ Installers signed with Microsoft and Apple developer certificates (no first-launch warnings)
 - 🗓️ Tripwire read-detection on Windows and macOS (driver / Endpoint Security)
@@ -77,7 +85,6 @@ _Last updated: October 2026 (v1.1.0)_
 - 🗓️ German interface
 
 ## 🗓️ v1.x – Every device
-- 🗓️ **Android**: Fake-AI-app check, AI network watch, scam protection
 - 🗓️ **iPhone & iPad**: Safari protection, link and media checks (Apple does not allow scanning other apps)
 - 💡 **Deepfake & voice-clone warning** for calls, videos and voice messages
 

@@ -75,13 +75,28 @@ calm, dark interface that stays out of your way and lives in your tray.
     <td><img src="assets/screenshots/ask-ai.png" alt="Ask AI explains a finding"><br><sub><b>Ask AI</b> <i>(new in 1.1)</i> – your own AI explains a threat in plain language. You see every word before it is sent.</sub></td>
     <td><img src="assets/screenshots/quarantine.png" alt="Quarantine"><br><sub><b>Quarantine</b> <i>(new in 1.1)</i> – threats taken out of action. Restore exactly or delete for good.</sub></td>
   </tr>
-  <tr>
-    <td><img src="assets/screenshots/browser-shield.png" alt="Browser extension: hidden AI instructions"><br><sub><b>Browser extension</b> <i>(preview)</i> – hidden instructions for AI assistants found and neutralized.</sub></td>
-    <td><img src="assets/screenshots/browser-paste-guard.png" alt="Browser extension: secret paste guard"><br><sub><b>Secret paste guard</b> <i>(preview)</i> – stops API keys and passwords before they reach an AI chat.</sub></td>
-  </tr>
 </table>
 
 <sub>Some screens show sample data for illustration.</sub>
+
+---
+
+## 📱 On every device
+
+<p align="center">
+  <img src="assets/showcase/android-showcase.png" alt="ZaRemba AI Watcher for Android – fake AI app detection" width="100%">
+  <br><sub><b>Android</b> – catches fake “DeepSeek”, “ChatGPT” &amp; co. apps, screen-control trojans and hidden AI instructions in any text. <a href="docs/ANDROID.md">Learn more</a></sub>
+</p>
+
+<p align="center">
+  <img src="assets/showcase/browser-showcase.png" alt="ZaRemba Prompt-Injection Shield browser extension" width="100%">
+  <br><sub><b>Browser</b> – the Prompt-Injection Shield finds instructions hidden from you but read by AI browsers and assistants. <a href="docs/BROWSER_EXTENSION.md">Learn more</a></sub>
+</p>
+
+<p align="center">
+  <img src="assets/showcase/paste-showcase.png" alt="ZaRemba secret paste guard for AI chats" width="100%">
+  <br><sub><b>AI chats</b> – API keys, private keys and passwords are stopped before they reach ChatGPT, Claude, Gemini and 13 more.</sub>
+</p>
 
 ---
 
@@ -94,7 +109,8 @@ calm, dark interface that stays out of your way and lives in your tray.
 | 🍎 **macOS** – Apple Silicon | [**ZaRemba-AI-Watcher-macos-apple-silicon.dmg**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-macos-apple-silicon.dmg) | macOS 11+ |
 | 🍎 **macOS** – Intel | [**ZaRemba-AI-Watcher-macos-intel.dmg**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-macos-intel.dmg) | macOS 11+ |
 | 🐧 **Linux** | [AppImage](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-linux-x64.AppImage) · [.deb](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-linux-x64.deb) | |
-| 📱 Android · iPhone · iPad | — | Planned – see [roadmap](ROADMAP.md) |
+| 🤖 **Android** 8+ | [**ZaRemba-AI-Watcher-android.apk**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-android.apk) | Open the file on your phone and allow the install – [guide](docs/ANDROID.md) |
+| 🍏 iPhone · iPad | — | Planned – see [roadmap](ROADMAP.md) |
 
 Install, click **Protect everything** – done. ZaRemba keeps itself and its threat intelligence up to date automatically
 (signed updates only). Step-by-step help: **[Installation guide](docs/INSTALL.md)**.
@@ -199,7 +215,8 @@ Exit codes for scripts and CI: `0` nothing to fix · `1` issues found · `2` cri
 | 🧊 **Quarantine** | One click takes a malicious MCP server, skill or package out of action – restore exactly or delete for good; optional automatic quarantine of known threats | ✅ Available (1.1) |
 | 🤖 **Bring your own AI** | Optional: Claude, ChatGPT/OpenAI, Gemini, local Ollama or your installed Claude Code explains findings and gives second opinions – you see every word before it is sent | ✅ Available (1.1) |
 | 🧩 **Browser extension** | [Prompt-Injection Shield](docs/BROWSER_EXTENSION.md) against hidden AI instructions, secret paste guard for 16 AI chats, check for 34 known malicious AI extensions (Chrome, Edge, Brave, Opera, Firefox) | 🧪 Developer preview (1.2) |
-| 📱 **Phone & tablet** | Android app, iPhone/iPad protection | 🗓️ Planned |
+| 🤖 **Android app** | [Fake AI app detection](docs/ANDROID.md) (ChatGPT, DeepSeek, Gemini, Claude …), screen-control and SMS-stealing apps, hidden AI instructions in any text | ✅ Available (1.0) |
+| 🍏 **iPhone & iPad** | Safari protection, link and message checks | 🗓️ Planned |
 
 Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes next: **[Roadmap](ROADMAP.md)**
 
@@ -232,7 +249,8 @@ Details: **[Privacy policy](PRIVACY.md)**
  ✅ v1.0  Desktop app · automatic updates · daily threat intelligence
  ✅ v1.1  Quarantine · bring your own AI                                  ← you are here
  🧪 v1.2  Browser extension – developer preview on GitHub, stores next
- 🗓️ v1.x  Code-signed installers · Android · iPhone/iPad
+ ✅ Android app (APK)
+ 🗓️ v1.x  Code-signed installers · iPhone/iPad
 ```
 
 Follow progress in the **[full roadmap](ROADMAP.md)** and the **[changelog](CHANGELOG.md)**.

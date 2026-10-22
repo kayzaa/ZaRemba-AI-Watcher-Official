@@ -3,6 +3,13 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Android 1.0.0] – 2026-10
+### Added
+- **ZaRemba AI Watcher for Android** (APK, Android 8+): fake AI app detection, known malicious apps, apps from
+  outside a store with Accessibility / device admin / notification / SMS access, apps allowed to install other apps,
+  AI apps overview, text check (Share → *Check with ZaRemba*), background checks with alerts, update check.
+  See [Android](docs/ANDROID.md).
+
 ## [1.1.0] – 2026-10
 ### Added
 - **Quarantine** for malicious findings: one click takes an MCP server, agent skill or poisoned package folder out of

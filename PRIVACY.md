@@ -1,6 +1,6 @@
 # Privacy policy
 
-_Applies to ZaRemba AI Watcher 1.x (desktop app, command line and browser extension). Last updated: October 2026 (v1.1)._
+_Applies to ZaRemba AI Watcher 1.x (desktop app, command line, browser extension and Android app). Last updated: October 2026 (v1.1)._
 
 **Short version: ZaRemba does not collect, send or store any of your data.** The only exception is the optional
 *Bring your own AI* feature: when **you** connect an AI and click **Send to AI**, the text you were shown goes to the AI
@@ -30,6 +30,15 @@ provider **you** chose – never to ZaRemba.
 | What happens with text I paste into AI chats? | On the supported AI chat sites it is checked for secrets inside your browser, at the moment you paste. It is not stored or sent anywhere by ZaRemba. |
 | Why does it ask to "manage your extensions"? | Only when you click **Check my extensions**: it compares the IDs of your installed extensions with a built-in list of known malicious AI extensions and lets you remove a match. The list of your extensions never leaves the browser. |
 | What is stored? | In the browser's extension storage on your device: your on/off settings and the result of the last extension check. Removing the extension deletes it. |
+
+## Android app
+
+| Question | Answer |
+|---|---|
+| Does the app send anything? | Only one small request to this GitHub repository to check for a newer version (can be switched off in Settings). Nothing about you or your phone is sent. No account, no analytics, no tracking. |
+| Why does it see all my apps? | To find fake and dangerous apps. The list of apps is checked on the phone and never leaves it. |
+| What about texts I check? | They are checked on the phone and not stored or sent. |
+| What is stored? | On the phone only: your settings, the time of the last check and which findings you were already told about. Uninstalling the app deletes it. |
 
 New online features will be described here before release and will never upload your files or secrets without your
 explicit action.
