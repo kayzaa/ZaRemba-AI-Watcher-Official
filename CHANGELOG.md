@@ -3,6 +3,18 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.0.0] – 2026-10
+### Added
+- **Desktop app** for Windows, macOS (Apple Silicon + Intel) and Linux: overview with protection score,
+  **Protect everything** in one click, AI Agents, MCP Firewall, AI Tripwire, Network Watch, Scan, Activity, Settings.
+- Background protection from the tray with system notifications; optional start with the computer.
+- **Signed automatic updates** of the app (minisign release key; forged updates are rejected).
+- **Signed threat intelligence feed**: downloaded automatically (desktop every 4 h, CLI `zaremba update`), verified
+  against the intel key and a quality gate; maintained daily by the ZaRemba research team.
+- The command-line program is bundled with the desktop app (AI agents and MCP configs call it).
+### Changed
+- Network downloads trust the operating system's certificate store (works behind company proxies).
+
 ## [0.4.0] – Developer Preview – 2026-10
 ### Added
 - **Agent Guard**: `zaremba guard install | uninstall | status | test | log`.

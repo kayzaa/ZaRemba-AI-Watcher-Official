@@ -7,7 +7,7 @@
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0b1626?style=for-the-badge">
   <img alt="Price" src="https://img.shields.io/badge/price-free-f5c542?style=for-the-badge">
   <img alt="Privacy" src="https://img.shields.io/badge/privacy-100%25%20local-2ea043?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/version-0.4.0%20preview-8957e5?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/version-1.0.0-8957e5?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -54,9 +54,6 @@ assistants and abuse permissions you granted. **ZaRemba AI Watcher is built only
 
 ## 🖥️ The desktop app
 
-> **Coming with v1.0** – the installers for Windows and macOS are being built right now. Until then, all protection
-> features are available in the command-line edition below.
-
 One window for everything: a live protection score, one-click protection, real-time alerts and a full history – in a
 calm, dark interface that stays out of your way and lives in your tray.
 
@@ -81,18 +78,27 @@ calm, dark interface that stays out of your way and lives in your tray.
 
 ## 📥 Download
 
-> **Developer Preview 0.4** – scanner, AI Tripwire, AI Network Watch, **real-time Agent Guard** and **MCP Firewall**. The desktop app with one-click protection is on the
-> [roadmap](ROADMAP.md).
-
-| System | Download | Notes |
+### 🖥️ Desktop app (recommended)
+| System | Download | |
 |---|---|---|
-| 🪟 **Windows 10 / 11** (64-bit) | [`zaremba-windows-x64.zip`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-windows-x64.zip) | Unzip, run in PowerShell |
-| 🍎 **macOS** – Apple Silicon | [`zaremba-macos-apple-silicon.tar.gz`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-macos-apple-silicon.tar.gz) | macOS 12+ |
-| 🍎 **macOS** – Intel | [`zaremba-macos-intel.tar.gz`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-macos-intel.tar.gz) | macOS 12+ |
-| 🐧 **Linux** (64-bit) | [`zaremba-linux-x64.tar.gz`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-linux-x64.tar.gz) | Static build, any distro |
+| 🪟 **Windows 10 / 11** | [**ZaRemba-AI-Watcher-windows-x64-setup.exe**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-windows-x64-setup.exe) | or [.msi](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-windows-x64.msi) for company rollouts |
+| 🍎 **macOS** – Apple Silicon | [**ZaRemba-AI-Watcher-macos-apple-silicon.dmg**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-macos-apple-silicon.dmg) | macOS 11+ |
+| 🍎 **macOS** – Intel | [**ZaRemba-AI-Watcher-macos-intel.dmg**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-macos-intel.dmg) | macOS 11+ |
+| 🐧 **Linux** | [AppImage](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-linux-x64.AppImage) · [.deb](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-linux-x64.deb) | |
 | 📱 Android · iPhone · iPad | — | Planned – see [roadmap](ROADMAP.md) |
 
-Every release lists **SHA-256 checksums** so you can verify your download. Step-by-step help: **[Installation guide](docs/INSTALL.md)**.
+Install, click **Protect everything** – done. ZaRemba keeps itself and its threat intelligence up to date automatically
+(signed updates only). Step-by-step help: **[Installation guide](docs/INSTALL.md)**.
+
+### ⌨️ Command line (for developers, CI and servers)
+| System | Download |
+|---|---|
+| 🪟 Windows (64-bit) | [`zaremba-windows-x64.zip`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-windows-x64.zip) |
+| 🍎 macOS – Apple Silicon | [`zaremba-macos-apple-silicon.tar.gz`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-macos-apple-silicon.tar.gz) |
+| 🍎 macOS – Intel | [`zaremba-macos-intel.tar.gz`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-macos-intel.tar.gz) |
+| 🐧 Linux (64-bit) | [`zaremba-linux-x64.tar.gz`](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/zaremba-linux-x64.tar.gz) |
+
+Every release lists **SHA-256 checksums** so you can verify your download.
 
 ---
 
@@ -130,6 +136,7 @@ zaremba net allow "my-tool"        Trust a program you know
 
 zaremba guard install              Real-time protection for Claude Code, Gemini CLI, Cursor, Windsurf, Copilot CLI
 zaremba mcp protect                Put the MCP Firewall in front of every local MCP server
+zaremba update                     Download the latest signed threat intelligence
 ```
 Guides: **[Agent Guard](docs/AGENT_GUARD.md)** · **[MCP Firewall](docs/MCP_FIREWALL.md)** (new in 0.4) ·
 **[AI Tripwire](docs/TRIPWIRE.md)** · **[AI Network Watch](docs/NETWORK_WATCH.md)**
@@ -169,7 +176,8 @@ Exit codes for scripts and CI: `0` nothing to fix · `1` issues found · `2` cri
 | 🌐 **AI Network Watch** | Shows which program talks to which AI service (OpenAI, Anthropic, Gemini, Hugging Face, DeepSeek … and local Ollama/LM Studio) and flags unknown or suspicious ones | ✅ Available (0.3) |
 | 🛑 **Real-time Agent Guard** | Checks every action of Claude Code, Gemini CLI, Cursor, Windsurf and GitHub Copilot CLI before it runs – blocks access to wallets, SSH keys, cloud logins and browser passwords, download-and-run and more | ✅ Available (0.4) |
 | 🔥 **MCP Firewall** | Sits between any AI app and its MCP servers: blocks dangerous calls, catches rug pulls and poisoned tool descriptions | ✅ Available (0.4) |
-| 🖥️ **Desktop app** | One-click protection, tray icon, notifications | 🗓️ Planned |
+| 🖥️ **Desktop app** | One-click protection, live score, tray icon, notifications, signed automatic updates | ✅ Available (1.0) |
+| 🧠 **Daily threat intelligence** | A research team adds newly disclosed malicious MCP servers, skills and packages every day – signed, delivered automatically | ✅ Available (1.0) |
 | 📱 **Mobile & browser** | Android app, browser extension against hidden AI instructions, iPhone/iPad protection | 🗓️ Planned |
 
 Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes next: **[Roadmap](ROADMAP.md)**
@@ -183,8 +191,8 @@ Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes
   files. Agent Guard and MCP Firewall only add their own entries to your AI apps' settings, keep a backup, and remove
   them again exactly.
 - **Secrets stay secret.** Keys are never printed – only a short redacted hint like `sk-pro…(33 chars)`.
-- **No internet needed.** The threat database is built in. Only `zaremba net` looks up the public addresses of AI
-  services (a DNS lookup) – nothing about you or your device is sent.
+- **Nothing about you is sent.** ZaRemba only *downloads*: signed app updates and the signed threat database from this
+  GitHub repository, and DNS lookups of public AI service names for Network Watch. No uploads, no telemetry.
 
 Details: **[Privacy policy](PRIVACY.md)**
 
@@ -196,9 +204,10 @@ Details: **[Privacy policy](PRIVACY.md)**
  ✅ v0.1  AI Inventory Scanner
  ✅ v0.2  AI Tripwire (decoy files)
  ✅ v0.3  AI Network Watch
- ✅ v0.4  Real-time Agent Guard + MCP Firewall   ← you are here
- 🔨 v1.0  Desktop app for Windows & macOS (signed installer)
- 🗓️ v1.x  Android · browser extension · iPhone/iPad
+ ✅ v0.4  Real-time Agent Guard + MCP Firewall
+ ✅ v1.0  Desktop app · automatic updates · daily threat intelligence   ← you are here
+ 🔨 v1.1  Code-signed installers · read-detection on Windows & macOS
+ 🗓️ v1.x  Browser extension · Android · iPhone/iPad
 ```
 
 Follow progress in the **[full roadmap](ROADMAP.md)** and the **[changelog](CHANGELOG.md)**.
@@ -231,8 +240,9 @@ private repository.
 <details>
 <summary><b>Windows says "Windows protected your PC" / macOS says the app can't be checked.</b></summary>
 
-Preview builds are not yet code-signed (signing comes with the v1.0 desktop app). Verify the SHA-256 checksum from the
-release page, then follow the [installation guide](docs/INSTALL.md#first-launch-warnings).
+The installers are not yet code-signed with a Microsoft/Apple certificate (planned for v1.1). Verify the SHA-256
+checksum from the release page, then follow the [installation guide](docs/INSTALL.md#first-launch-warnings).
+App updates are always signed with ZaRemba's own release key and verified before installing.
 </details>
 
 <details>

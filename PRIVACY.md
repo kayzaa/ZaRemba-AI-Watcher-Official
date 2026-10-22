@@ -1,12 +1,12 @@
 # Privacy policy
 
-_Applies to ZaRemba AI Watcher 0.x (scanner, AI Tripwire, AI Network Watch, Agent Guard and MCP Firewall). Last updated: October 2026._
+_Applies to ZaRemba AI Watcher 1.x (desktop app and command line). Last updated: October 2026._
 
 **Short version: ZaRemba does not collect, send or store any of your data.**
 
 | Question | Answer |
 |---|---|
-| Does ZaRemba connect to the internet? | `zaremba scan` and `zaremba tripwire` work fully offline. `zaremba net` only performs DNS lookups of public AI service host names (like `api.openai.com`) to learn their addresses. Nothing about you or your device is sent. |
+| Does ZaRemba connect to the internet? | Only to **download**: (1) signed app updates and the update information from this GitHub repository, (2) the signed threat-intelligence file from this GitHub repository, (3) DNS lookups of public AI service names for Network Watch. These are ordinary downloads – like opening a web page on GitHub, GitHub sees your IP address. Nothing about you, your files or your AI usage is sent. `zaremba scan` and `zaremba tripwire` work fully offline. |
 | Does it send telemetry, crash reports or statistics? | **No.** |
 | Do I need an account? | **No.** |
 | What does it read? | Configuration files of AI tools, agent skill folders, shell profiles, `.env` files, installed package manifests, and the project folders you pass with `--project`. |

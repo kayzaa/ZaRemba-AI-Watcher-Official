@@ -5,7 +5,7 @@ Dates are targets, not promises – security work gets released when it is ready
 
 **Legend:** ✅ Released · 🔨 In development · 🧪 Testing · 🗓️ Planned · 💡 Exploring
 
-_Last updated: October 2026 (v0.4.0)_
+_Last updated: October 2026 (v1.0.0)_
 
 ---
 
@@ -48,15 +48,19 @@ _Last updated: October 2026 (v0.4.0)_
 - ✅ MCP Firewall for every MCP app: blocks dangerous calls, rug-pull protection (pinned tools), poisoned-tool quarantine
 - ✅ Install/uninstall restore your settings exactly
 
-## 🔨 v1.0 – Desktop App · Windows & macOS · *in development*
+## ✅ v1.0 – Desktop App · October 2026
+- ✅ Desktop app for Windows, macOS (Apple Silicon + Intel) and Linux with one-click protection and live protection score
+- ✅ Background protection in the tray: tripwire alarms, AI network watch, live Agent Guard / MCP Firewall alerts, notifications
+- ✅ Signed automatic app updates (verified against ZaRemba's release key before installing)
+- ✅ Daily threat-intelligence research team; signed feed delivered automatically to every app
+- ✅ Starts with your computer (optional), English interface
+
+## 🔨 v1.1 – Trust & depth · *in development*
+- 🗓️ Installers signed with Microsoft and Apple developer certificates (no first-launch warnings)
 - 🗓️ Tripwire read-detection on Windows and macOS (driver / Endpoint Security)
 - 🗓️ Network Watch from system events instead of polling – catches even very short connections
 - 🗓️ Confirm Gemini CLI, Cursor, Windsurf and Copilot CLI integrations on real installs; add more agents as they ship hooks
-- 🗓️ Beautiful app with one-click scan and live protection
-- 🗓️ Background service, tray icon and notifications
-- 🗓️ Signed installers (Windows code signing, Apple notarization)
-- 🗓️ Automatic, signed threat-database updates
-- 🗓️ Languages: English, German, more to follow
+- 🗓️ German interface
 
 ## 🗓️ v1.x – Every device
 - 🗓️ **Browser extension** (Chrome, Edge, Firefox, Safari): Prompt-Injection Shield – spots hidden instructions aimed at AI browsers

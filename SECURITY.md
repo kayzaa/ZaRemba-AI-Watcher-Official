@@ -20,6 +20,6 @@ so the whole community benefits. **Never attach live malware**; names, versions,
 ## Supported versions
 | Version | Supported |
 |---|---|
-| 0.4.x (latest) | ✅ |
-| 0.3.x and older | ⚠️ please update |
+| 1.0.x (latest) | ✅ |
+| 0.x | ⚠️ please update to 1.0 |
 | older | ❌ – please update |
