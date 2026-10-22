@@ -61,6 +61,31 @@ Detected key types: OpenAI, Anthropic, Google AI (Gemini), Hugging Face, OpenRou
 | `ZRW-TRP-003` | HIGH | A decoy file was deleted or moved |
 | `ZRW-TRP-004` | HIGH | Live tripwire alarms were recorded |
 
+## Agent Guard
+| Rule | Decision | What it means |
+|---|---|---|
+| `ZRW-GRD-001` | DENY | Access to a no-go zone (credentials, browser secrets, wallets, ZaRemba itself) |
+| `ZRW-GRD-002` | DENY | An agent touched an AI Tripwire decoy |
+| `ZRW-GRD-003` | ASK | Reading a `.env` file |
+| `ZRW-GRD-004` | DENY | Download-and-run command |
+| `ZRW-GRD-005` | DENY | Starting an AI agent with safety prompts switched off |
+| `ZRW-GRD-006` | ASK | Uploading a local file |
+| `ZRW-GRD-007` | ASK | Autostart / persistence change |
+| `ZRW-GRD-008` | DENY | Wiping the home folder or a disk |
+| `ZRW-GRD-009` | ASK | Paste, webhook or tunnel service |
+| `ZRW-GRD-010` | DENY | Switching ZaRemba off |
+| `ZRW-GRD-100` | INFO | Agent is protected by the Agent Guard |
+| `ZRW-GRD-101` | LOW | Agent is installed but not protected |
+
+## MCP Firewall (log events)
+| Event | Meaning |
+|---|---|
+| `blocked_call` | A tool call was blocked by an Agent Guard rule |
+| `warned_call` | A tool call that would need your OK was let through and logged |
+| `changed_tool` | A tool's definition changed since it was pinned – quarantined |
+| `poisoned_tool` | A tool's description contains hidden instructions – quarantined |
+| `pinned` | A server added a new tool |
+
 ## Threat database
 The built-in database covers publicly documented incidents, for example the **s1ngularity / Nx** supply-chain attack and the
 **postmark-mcp** malicious MCP server. Know of another one?

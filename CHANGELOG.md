@@ -3,6 +3,20 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.4.0] – Developer Preview – 2026-10
+### Added
+- **Agent Guard**: `zaremba guard install | uninstall | status | test | log`.
+  - Connects through official hooks of Claude Code (verified in a real session), Gemini CLI, Cursor, Windsurf and
+    GitHub Copilot CLI (experimental).
+  - Blocks: no-go zones (SSH, cloud logins, tokens, keychains, browser passwords/cookies, crypto wallets), tripwire
+    decoys, download-and-run, agents launched without safety prompts, disk wipes, switching ZaRemba off.
+  - Asks before: `.env` reads, file uploads, autostart/persistence changes, paste/webhook/tunnel services.
+  - Settings are restored exactly on uninstall; broken settings files are never touched.
+- **MCP Firewall**: `zaremba mcp protect | unprotect | status | trust | log`.
+  - Blocks dangerous tool calls, pins tool definitions (rug-pull protection), quarantines tools with hidden
+    instructions or invisible characters. Quarantine persists across restarts.
+- `zaremba scan` now reminds you when an installed agent is not protected (`ZRW-GRD-100/101`).
+
 ## [0.3.0] – Developer Preview – 2026-10
 ### Added
 - **AI Network Watch**: `zaremba net [check | watch | allow | disallow | allowed | history]`.

@@ -5,7 +5,7 @@ Dates are targets, not promises – security work gets released when it is ready
 
 **Legend:** ✅ Released · 🔨 In development · 🧪 Testing · 🗓️ Planned · 💡 Exploring
 
-_Last updated: October 2026 (v0.3.0)_
+_Last updated: October 2026 (v0.4.0)_
 
 ---
 
@@ -40,15 +40,18 @@ _Last updated: October 2026 (v0.3.0)_
 - ✅ Trusted list for the programs you know
 - ✅ Metadata only – traffic is never read
 
-## 🔨 v0.4 – Real-time Agent Guard & MCP Firewall · *in development*
-- 🗓️ No-go zones for AI agents: wallets, SSH keys, browser passwords, AI keys
-- 🗓️ Blocks dangerous command patterns (download-and-run, secret harvesting)
-- 🗓️ MCP Firewall: sits between your agent and its MCP servers, blocks hidden data leaks
-- 🗓️ Integrations through official agent hooks – no hacks
+## ✅ v0.4 – Real-time Agent Guard & MCP Firewall · October 2026
+- ✅ One rule set for every agent, connected through official hooks: **Claude Code** (verified), Gemini CLI, Cursor, Windsurf, GitHub Copilot CLI (experimental)
+- ✅ No-go zones: SSH keys, cloud logins, tokens, keychains, browser passwords & cookies, crypto wallets, tripwire decoys
+- ✅ Blocks download-and-run, agents launched without safety prompts (s1ngularity), disk wipes, attempts to switch ZaRemba off
+- ✅ Asks before `.env` reads, uploads, autostart changes and paste/webhook services
+- ✅ MCP Firewall for every MCP app: blocks dangerous calls, rug-pull protection (pinned tools), poisoned-tool quarantine
+- ✅ Install/uninstall restore your settings exactly
 
-## 🗓️ v1.0 – Desktop App · Windows & macOS
+## 🔨 v1.0 – Desktop App · Windows & macOS · *in development*
 - 🗓️ Tripwire read-detection on Windows and macOS (driver / Endpoint Security)
 - 🗓️ Network Watch from system events instead of polling – catches even very short connections
+- 🗓️ Confirm Gemini CLI, Cursor, Windsurf and Copilot CLI integrations on real installs; add more agents as they ship hooks
 - 🗓️ Beautiful app with one-click scan and live protection
 - 🗓️ Background service, tray icon and notifications
 - 🗓️ Signed installers (Windows code signing, Apple notarization)
