@@ -5,7 +5,7 @@ Dates are targets, not promises – security work gets released when it is ready
 
 **Legend:** ✅ Released · 🔨 In development · 🧪 Testing · 🗓️ Planned · 💡 Exploring
 
-_Last updated: October 2026 (v1.2.0)_
+_Last updated: October 2026 (v1.3.0)_
 
 ---
 
@@ -68,13 +68,18 @@ _Last updated: October 2026 (v1.2.0)_
 - ✅ **Attack Lab** (`zaremba lab`): 26 harmless attack simulations mapped to the OWASP Top 10 for Agentic Applications – 26 of 26 detected
 - ✅ Fewer false alarms: example keys in docs are ignored; text written to files is not treated as a command
 
+## ✅ v1.3 – One threat list for every device · October 2026
+- ✅ The signed threat list now also covers **IDE extensions, browser extensions and Android apps**
+- ✅ Desktop app, command line, browser extension and Android app all download it and check its signature – new threats arrive without an app update
+- ✅ Daily research team adds newly reported threats; new attack techniques become rules through a weekly, reviewed build
+
 ## 🧪 Browser extension · *developer preview available*
 - ✅ **Prompt-Injection Shield** for Chrome, Edge, Brave, Opera and Firefox: finds hidden instructions on web pages aimed at AI browsers and assistants, one-click neutralize and restore
 - ✅ **Secret paste guard**: warns before you paste API keys, private keys or passwords into ChatGPT, Claude, Gemini and 13 other AI chats
 - ✅ **Malicious AI extension check**: 34 fake AI extensions caught stealing chats and e-mails, each with its public source
 - ✅ Download on GitHub for developer mode – [install guide](docs/BROWSER_EXTENSION.md)
 - 🔨 Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons (automatic updates)
-- 🗓️ Signed live updates of the malicious-extension list, Firefox extension IDs
+- ✅ Signed live updates of the malicious-extension list (1.3.0)
 
 ## ✅ Android app 1.0 · October 2026 · *APK on GitHub*
 - ✅ Fake AI app check: apps posing as ChatGPT, Claude, Gemini, DeepSeek, Grok, Copilot, Perplexity, Meta AI, Mistral, Poe, Character.AI, Kimi or Qwen
@@ -82,7 +87,8 @@ _Last updated: October 2026 (v1.2.0)_
 - ✅ Apps from outside a store with screen control (Accessibility), device admin, notification or SMS access
 - ✅ AI apps overview with access rights · check any text for hidden AI instructions (Share → ZaRemba)
 - ✅ Background checks with alerts, update check
-- 🗓️ Google Play release · signed live threat updates · AI network watch (local VPN, opt-in)
+- ✅ Signed live threat updates (1.1.0)
+- 🗓️ Google Play release · AI network watch (local VPN, opt-in)
 
 ## 🗓️ Trust & depth
 - 🗓️ Installers signed with Microsoft and Apple developer certificates (no first-launch warnings)

@@ -3,6 +3,15 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.0] – 2026-10 · Browser extension 1.3.0 · Android 1.1.0
+### Added
+- **One signed threat list for every device**: the threat database now also lists malicious IDE extensions, browser
+  extensions and Android apps. The **browser extension** (1.3.0) and the **Android app** (1.1.0) download it, verify
+  its signature with the same ZaRemba intel key as the desktop app and use it – new threats arrive without an app
+  update. Android: can be switched off in Settings.
+### Changed
+- `ZRW-IDE-002` (malicious IDE extension) now uses the signed threat list and respects affected versions.
+
 ## [1.2.0] – 2026-10
 ### Added
 - **Injection Shield for agents** (`ZRW-GRD-020`): Agent Guard now also hooks `PostToolUse` (Claude Code) and

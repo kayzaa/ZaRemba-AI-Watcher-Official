@@ -92,7 +92,7 @@ Claude Code sessions of the last 90 days are checked (`~/.claude/projects`). Sec
 |---|---|---|
 | `ZRW-MEM-001` | HIGH | An agent rules / memory file (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `.cursorrules`, `.windsurfrules`, Copilot instructions, Cursor/Windsurf rules) hides orders: invisible characters, orders inside HTML comments, or "override the user" plus a risky action |
 | `ZRW-IDE-001` | CRITICAL | A VS Code / Cursor / Windsurf / VSCodium extension contains invisible-character code (technique of the GlassWorm worm, 2025) |
-| `ZRW-IDE-002` | CRITICAL | An installed extension is named in public GlassWorm reports |
+| `ZRW-IDE-002` | CRITICAL | An installed extension is listed as malicious in the signed threat list (e.g. GlassWorm reports) |
 | `ZRW-MDL-001` | CRITICAL | An AI model file (pickle-based: `.pt`, `.pth`, `.bin`, `.pkl`, `.ckpt`, `.joblib`) would run commands or code when loaded (`os.system`, `subprocess`, `exec`, sockets …). Files are only read, never loaded |
 | `ZRW-MDL-002` | MEDIUM | A model file is packed as 7z – used by the nullifAI technique to slip past model scanners |
 | `ZRW-MAL-001` | HIGH | A script calls an AI model API, asks it for commands or code and runs the answer – the pattern of AI-steered malware such as LameHug and PROMPTFLUX |

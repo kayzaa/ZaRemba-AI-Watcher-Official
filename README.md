@@ -7,7 +7,7 @@
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0b1626?style=for-the-badge">
   <img alt="Price" src="https://img.shields.io/badge/price-free-f5c542?style=for-the-badge">
   <img alt="Privacy" src="https://img.shields.io/badge/privacy-100%25%20local-2ea043?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/version-1.2.0-8957e5?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/version-1.3.0-8957e5?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -211,7 +211,7 @@ Exit codes for scripts and CI: `0` nothing to fix · `1` issues found · `2` cri
 | 🛑 **Real-time Agent Guard** | Checks every action of Claude Code, Gemini CLI, Cursor, Windsurf and GitHub Copilot CLI before it runs – blocks access to wallets, SSH keys, cloud logins and browser passwords, download-and-run and more | ✅ Available (0.4) |
 | 🔥 **MCP Firewall** | Sits between any AI app and its MCP servers: blocks dangerous calls, catches rug pulls and poisoned tool descriptions | ✅ Available (0.4) |
 | 🖥️ **Desktop app** | One-click protection, live score, tray icon, notifications, signed automatic updates | ✅ Available (1.0) |
-| 🧠 **Daily threat intelligence** | A research team adds newly disclosed malicious MCP servers, skills and packages every day – signed, delivered automatically | ✅ Available (1.0) |
+| 🧠 **Daily threat intelligence** | A research team adds newly disclosed malicious MCP servers, skills, packages, IDE and browser extensions and Android apps every day – signed, delivered automatically to desktop, browser and Android | ✅ Available (1.0 · all devices since 1.3) |
 | 🧊 **Quarantine** | One click takes a malicious MCP server, skill or package out of action – restore exactly or delete for good; optional automatic quarantine of known threats | ✅ Available (1.1) |
 | 🤖 **Bring your own AI** | Optional: Claude, ChatGPT/OpenAI, Gemini, local Ollama or your installed Claude Code explains findings and gives second opinions – you see every word before it is sent | ✅ Available (1.1) |
 | 🧠 **Injection Shield for agents** | Every result your AI agent receives – web pages, files, MCP answers – is checked for hidden instructions; the agent is told to treat them as data | ✅ Available (1.2) |
@@ -259,7 +259,8 @@ Details: **[Privacy policy](PRIVACY.md)**
  ✅ v0.4  Real-time Agent Guard + MCP Firewall
  ✅ v1.0  Desktop app · automatic updates · daily threat intelligence
  ✅ v1.1  Quarantine · bring your own AI · Android app · browser extension preview
- ✅ v1.2  Deep defense: Injection Shield for agents · forensics · deep scan · Attack Lab 26/26   ← you are here
+ ✅ v1.2  Deep defense: Injection Shield for agents · forensics · deep scan · Attack Lab 26/26
+ ✅ v1.3  One signed threat list for desktop, browser and Android   ← you are here
  🗓️ v1.x  Code-signed installers · iPhone/iPad
 ```
 

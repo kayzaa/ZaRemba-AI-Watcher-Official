@@ -37,6 +37,11 @@ genuine: the SHA-256 checksum is listed on the release page, and every ZaRemba A
 (certificate SHA-256 `FE:D4:BF:3D:77:BB:5E:D5:81:0C:E8:8C:99:20:0C:20:35:3F:D2:F7:BC:7C:48:F5:40:66:94:2A:5D:E6:E1:8B`).
 Android only installs updates signed with that same key.
 
+### Live threat list
+New malicious apps reported by security researchers reach the app without an app update: it downloads the signed
+ZaRemba threat list when you open it and with every background check (about every 6 hours), verifies its signature and
+only then uses it. You can switch this off in Settings (*Threat list updates*).
+
 ### Updates
 ZaRemba checks the official release page for a newer version (you can switch this off in Settings) and shows a
 **Download** button. Updates install over the old version and keep your settings.
@@ -48,7 +53,7 @@ ZaRemba checks the official release page for a newer version (you can switch thi
 | See all installed apps | To find fake and dangerous apps. The list never leaves the phone. |
 | Request to uninstall apps | Only opens Android's own *Uninstall?* dialog when **you** tap Uninstall. |
 | Notifications | Alerts about new threats (optional). |
-| Internet | Only to check the official GitHub release page for updates. Nothing about you is sent. |
+| Internet | Only to download from the official GitHub repository: the update check and the signed threat list. Nothing about you is sent. |
 
 No account, no tracking, no analytics. Texts you check are checked on the phone and not stored.
 

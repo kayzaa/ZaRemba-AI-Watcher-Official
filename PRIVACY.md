@@ -25,20 +25,20 @@ provider **you** chose – never to ZaRemba.
 
 | Question | Answer |
 |---|---|
-| Does the extension send anything? | **No.** It makes no network requests at all – no account, no analytics, no tracking. |
+| Does the extension send anything? | **No.** Its only network request is a download of the public, signed threat list from this GitHub repository (about every 6 hours) – like opening a page on GitHub, GitHub sees your IP address. Nothing about you, your pages or your extensions is sent. No account, no analytics, no tracking. |
 | Why can it read all websites? | The Prompt-Injection Shield must read each page you open to find hidden instructions aimed at AI assistants, and change the page when you click **Neutralize**. Page content is checked in your browser and never stored or sent. |
 | What happens with text I paste into AI chats? | On the supported AI chat sites it is checked for secrets inside your browser, at the moment you paste. It is not stored or sent anywhere by ZaRemba. |
-| Why does it ask to "manage your extensions"? | Only when you click **Check my extensions**: it compares the IDs of your installed extensions with a built-in list of known malicious AI extensions and lets you remove a match. The list of your extensions never leaves the browser. |
-| What is stored? | In the browser's extension storage on your device: your on/off settings and the result of the last extension check. Removing the extension deletes it. |
+| Why does it ask to "manage your extensions"? | Only when you click **Check my extensions**: it compares the IDs of your installed extensions with the built-in and the downloaded signed list of known malicious AI extensions and lets you remove a match. The list of your extensions never leaves the browser. |
+| What is stored? | In the browser's extension storage on your device: your on/off settings, the downloaded threat list and the result of the last extension check. Removing the extension deletes it. |
 
 ## Android app
 
 | Question | Answer |
 |---|---|
-| Does the app send anything? | Only one small request to this GitHub repository to check for a newer version (can be switched off in Settings). Nothing about you or your phone is sent. No account, no analytics, no tracking. |
+| Does the app send anything? | It only downloads from this GitHub repository: a small file to check for a newer version, and the public, signed threat list (both can be switched off in Settings). Nothing about you or your phone is sent. No account, no analytics, no tracking. |
 | Why does it see all my apps? | To find fake and dangerous apps. The list of apps is checked on the phone and never leaves it. |
 | What about texts I check? | They are checked on the phone and not stored or sent. |
-| What is stored? | On the phone only: your settings, the time of the last check and which findings you were already told about. Uninstalling the app deletes it. |
+| What is stored? | On the phone only: your settings, the downloaded threat list, the time of the last check and which findings you were already told about. Uninstalling the app deletes it. |
 
 New online features will be described here before release and will never upload your files or secrets without your
 explicit action.

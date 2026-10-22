@@ -101,6 +101,7 @@ Compare the SHA-256 checksum with `SHA256SUMS.txt` on the release page.
 - It checks what is in the page. Instructions inside **images** (for example faint text in a picture) are not detected.
 - AI browsers that load pages on their own servers do not see what you neutralize in your browser – there the warning
   still tells you not to let the AI act on the page.
-- The extension check covers Chrome Web Store extension IDs (Chrome, Edge, Brave, Opera). The list is updated with each
-  extension release.
+- The extension check covers Chrome Web Store extension IDs (Chrome, Edge, Brave, Opera); the list format also takes
+  Firefox add-on IDs. New entries arrive through the signed threat list, which the extension downloads about every 6
+  hours and only uses if its signature is valid (needs Chrome 137+ / Firefox 142+; older browsers keep the built-in list).
 - No security product can catch everything. Treat a clean result as "nothing known found", not as a guarantee.
