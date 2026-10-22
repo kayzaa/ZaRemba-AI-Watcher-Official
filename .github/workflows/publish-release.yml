@@ -18,11 +18,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Read version
         id: v
-        run: echo "version=$(tr -d '[:space:]' < downloads/LATEST)" >> "$GITHUB_OUTPUT"
+        run: |
+          if [ ! -f downloads/LATEST ]; then echo "No downloads/LATEST yet – nothing to publish."; exit 0; fi
+          echo "version=$(tr -d '[:space:]' < downloads/LATEST)" >> "$GITHUB_OUTPUT"
       - name: Verify checksums
+        if: steps.v.outputs.version != ''
         working-directory: downloads/${{ steps.v.outputs.version }}
         run: sha256sum -c SHA256SUMS.txt
       - name: Create or update release
+        if: steps.v.outputs.version != ''
         env:
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ steps.v.outputs.version }}
