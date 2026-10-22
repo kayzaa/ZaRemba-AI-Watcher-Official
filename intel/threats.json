@@ -6,7 +6,16 @@
       "id": "ZRW-INTEL-0001",
       "kind": "npm_package",
       "name": "nx",
-      "versions": ["20.9.0", "20.10.0", "20.11.0", "20.12.0", "21.5.0", "21.6.0", "21.7.0", "21.8.0"],
+      "versions": [
+        "20.9.0",
+        "20.10.0",
+        "20.11.0",
+        "20.12.0",
+        "21.5.0",
+        "21.6.0",
+        "21.7.0",
+        "21.8.0"
+      ],
       "description": "s1ngularity supply-chain attack (Aug 2025): compromised Nx build system versions that abused installed AI coding CLIs to search for and steal secrets.",
       "reference": "https://wiz.io/blog/s1ngularity-supply-chain-attack"
     },
@@ -17,6 +26,352 @@
       "versions": [],
       "description": "Unofficial MCP server impersonating Postmark. From version 1.0.16 it silently BCC'd every e-mail sent through it to an attacker address (Sep 2025).",
       "reference": "https://thehackernews.com/2025/09/first-malicious-mcp-server-found.html"
+    },
+    {
+      "id": "ZRW-INTEL-0003",
+      "kind": "ide_extension",
+      "name": "ai-driven-dev.ai-driven-dev",
+      "versions": [],
+      "description": "Malicious extension on Open VSX spreading the GlassWorm worm, which hides its loader in invisible Unicode characters and steals GitHub, npm and crypto-wallet credentials (Koi Security / BleepingComputer, 2025).",
+      "reference": "https://www.bleepingcomputer.com/news/security/glassworm-malware-returns-on-openvsx-with-3-new-vscode-extensions/"
+    },
+    {
+      "id": "ZRW-INTEL-0004",
+      "kind": "ide_extension",
+      "name": "adhamu.history-in-sublime-merge",
+      "versions": [],
+      "description": "Malicious extension on Open VSX spreading the GlassWorm worm, which hides its loader in invisible Unicode characters and steals GitHub, npm and crypto-wallet credentials (Koi Security / BleepingComputer, 2025).",
+      "reference": "https://www.bleepingcomputer.com/news/security/glassworm-malware-returns-on-openvsx-with-3-new-vscode-extensions/"
+    },
+    {
+      "id": "ZRW-INTEL-0005",
+      "kind": "ide_extension",
+      "name": "yasuyuky.transient-emacs",
+      "versions": [],
+      "description": "Malicious extension on Open VSX spreading the GlassWorm worm, which hides its loader in invisible Unicode characters and steals GitHub, npm and crypto-wallet credentials (Koi Security / BleepingComputer, 2025).",
+      "reference": "https://www.bleepingcomputer.com/news/security/glassworm-malware-returns-on-openvsx-with-3-new-vscode-extensions/"
+    },
+    {
+      "id": "ZRW-INTEL-0006",
+      "kind": "android_app",
+      "name": "com.hello.world",
+      "versions": [],
+      "description": "Fake \"DeepSeek\" app that installs the OctoV2 banking trojan (K7 Security Labs, March 2025).",
+      "reference": "https://labs.k7computing.com/index.php/android-banking-trojan-octov2-masquerading-as-deepseek-ai/"
+    },
+    {
+      "id": "ZRW-INTEL-0007",
+      "kind": "android_app",
+      "name": "com.vgsupervision_kit29",
+      "versions": [],
+      "description": "Malicious app: the OctoV2 banking trojan installed by a fake \"DeepSeek\" app; abuses Accessibility to take over the phone (K7 Security Labs, March 2025).",
+      "reference": "https://labs.k7computing.com/index.php/android-banking-trojan-octov2-masquerading-as-deepseek-ai/"
+    },
+    {
+      "id": "ZRW-INTEL-0008",
+      "kind": "browser_extension",
+      "name": "fnmihdojmnkclgjpcoonokmkhjpjechg",
+      "versions": [],
+      "description": "Fake AI sidebar that secretly sent ChatGPT and DeepSeek conversations and all open tab addresses to the attackers every 30 minutes (OX Security, Dec 2025 – Jan 2026).",
+      "reference": "https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html",
+      "label": "Chat GPT for Chrome with GPT-5, Claude Sonnet & DeepSeek AI"
+    },
+    {
+      "id": "ZRW-INTEL-0009",
+      "kind": "browser_extension",
+      "name": "inhcgfpbfdjbjogdfjbclgolkmhnooop",
+      "versions": [],
+      "description": "Fake AI sidebar that secretly sent ChatGPT and DeepSeek conversations and all open tab addresses to the attackers every 30 minutes (OX Security, Dec 2025 – Jan 2026).",
+      "reference": "https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html",
+      "label": "AI Sidebar with Deepseek, ChatGPT, Claude, and more."
+    },
+    {
+      "id": "ZRW-INTEL-0010",
+      "kind": "browser_extension",
+      "name": "fppbiomdkfbhgjjdmojlogeceejinadg",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Gemini AI Sidebar"
+    },
+    {
+      "id": "ZRW-INTEL-0011",
+      "kind": "browser_extension",
+      "name": "gghdfkafnhfpaooiolhncejnlgglhkhe",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Sidebar"
+    },
+    {
+      "id": "ZRW-INTEL-0012",
+      "kind": "browser_extension",
+      "name": "nlhpidbjmmffhoogcennoiopekbiglbp",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Assistant"
+    },
+    {
+      "id": "ZRW-INTEL-0013",
+      "kind": "browser_extension",
+      "name": "djhjckkfgancelbmgcamjimgphaphjdl",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Sidebar"
+    },
+    {
+      "id": "ZRW-INTEL-0014",
+      "kind": "browser_extension",
+      "name": "llojfncgbabajmdglnkbhmiebiinohek",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "ChatGPT Sidebar"
+    },
+    {
+      "id": "ZRW-INTEL-0015",
+      "kind": "browser_extension",
+      "name": "acaeafediijmccnjlokgcdiojiljfpbe",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "ChatGPT Translate"
+    },
+    {
+      "id": "ZRW-INTEL-0016",
+      "kind": "browser_extension",
+      "name": "kblengdlefjpjkekanpoidgoghdngdgl",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI GPT"
+    },
+    {
+      "id": "ZRW-INTEL-0017",
+      "kind": "browser_extension",
+      "name": "fdlagfnfaheppaigholhoojabfaapnhb",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Google Gemini"
+    },
+    {
+      "id": "ZRW-INTEL-0018",
+      "kind": "browser_extension",
+      "name": "gcfianbpjcfkafpiadmheejkokcmdkjl",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Llama"
+    },
+    {
+      "id": "ZRW-INTEL-0019",
+      "kind": "browser_extension",
+      "name": "cgmmcoandmabammnhfnjcakdeejbfimn",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Grok"
+    },
+    {
+      "id": "ZRW-INTEL-0020",
+      "kind": "browser_extension",
+      "name": "phiphcloddhmndjbdedgfbglhpkjcffh",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Asking Chat Gpt"
+    },
+    {
+      "id": "ZRW-INTEL-0021",
+      "kind": "browser_extension",
+      "name": "pgfibniplgcnccdnkhblpmmlfodijppg",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "ChatGBT"
+    },
+    {
+      "id": "ZRW-INTEL-0022",
+      "kind": "browser_extension",
+      "name": "nkgbfengofophpmonladgaldioelckbe",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Chat Bot GPT"
+    },
+    {
+      "id": "ZRW-INTEL-0023",
+      "kind": "browser_extension",
+      "name": "gcdfailafdfjbailcdcbjmeginhncjkb",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Grok Chatbot"
+    },
+    {
+      "id": "ZRW-INTEL-0024",
+      "kind": "browser_extension",
+      "name": "ebmmjmakencgmgoijdfnbailknaaiffh",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Chat With Gemini"
+    },
+    {
+      "id": "ZRW-INTEL-0025",
+      "kind": "browser_extension",
+      "name": "baonbjckakcpgliaafcodddkoednpjgf",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "XAI"
+    },
+    {
+      "id": "ZRW-INTEL-0026",
+      "kind": "browser_extension",
+      "name": "gnaekhndaddbimfllbgmecjijbbfpabc",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Ask Gemini"
+    },
+    {
+      "id": "ZRW-INTEL-0027",
+      "kind": "browser_extension",
+      "name": "hgnjolbjpjmhepcbjgeeallnamkjnfgi",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Letter Generator"
+    },
+    {
+      "id": "ZRW-INTEL-0028",
+      "kind": "browser_extension",
+      "name": "lodlcpnbppgipaimgbjgniokjcnpiiad",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Message Generator"
+    },
+    {
+      "id": "ZRW-INTEL-0029",
+      "kind": "browser_extension",
+      "name": "cmpmhhjahlioglkleiofbjodhhiejhei",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Translator"
+    },
+    {
+      "id": "ZRW-INTEL-0030",
+      "kind": "browser_extension",
+      "name": "bilfflcophfehljhpnklmcelkoiffapb",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI For Translation"
+    },
+    {
+      "id": "ZRW-INTEL-0031",
+      "kind": "browser_extension",
+      "name": "cicjlpmjmimeoempffghfglndokjihhn",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Cover Letter Generator"
+    },
+    {
+      "id": "ZRW-INTEL-0032",
+      "kind": "browser_extension",
+      "name": "ckneindgfbjnbbiggcmnjeofelhflhaj",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Image Generator Chat GPT"
+    },
+    {
+      "id": "ZRW-INTEL-0033",
+      "kind": "browser_extension",
+      "name": "dbclhjpifdfkofnmjfpheiondafpkoed",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Ai Wallpaper Generator"
+    },
+    {
+      "id": "ZRW-INTEL-0034",
+      "kind": "browser_extension",
+      "name": "ecikmpoikkcelnakpgaeplcjoickgacj",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Ai Picture Generator"
+    },
+    {
+      "id": "ZRW-INTEL-0035",
+      "kind": "browser_extension",
+      "name": "kepibgehhljlecgaeihhnmibnmikbnga",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "DeepSeek Download"
+    },
+    {
+      "id": "ZRW-INTEL-0036",
+      "kind": "browser_extension",
+      "name": "ckicoadchmmndbakbokhapncehanaeni",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "AI Email Writer"
+    },
+    {
+      "id": "ZRW-INTEL-0037",
+      "kind": "browser_extension",
+      "name": "fnjinbdmidgjkpmlihcginjipjaoapol",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Email Generator AI"
+    },
+    {
+      "id": "ZRW-INTEL-0038",
+      "kind": "browser_extension",
+      "name": "gohgeedemmaohocbaccllpkabadoogpl",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "DeepSeek Chat"
+    },
+    {
+      "id": "ZRW-INTEL-0039",
+      "kind": "browser_extension",
+      "name": "flnecpdpbhdblkpnegekobahlijbmfok",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "ChatGPT Picture Generator"
+    },
+    {
+      "id": "ZRW-INTEL-0040",
+      "kind": "browser_extension",
+      "name": "idhknpoceajhnjokpnbicildeoligdgh",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "ChatGPT Translation"
+    },
+    {
+      "id": "ZRW-INTEL-0041",
+      "kind": "browser_extension",
+      "name": "fpmkabpaklbhbhegegapfkenkmpipick",
+      "versions": [],
+      "description": "Fake AI assistant (\"AiFrame\" campaign) that loads a remote page over every site and can read page content, including e-mails in Gmail (LayerX/Akamai, Feb 2026).",
+      "reference": "https://www.akamai.com/blog/security-research/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes",
+      "label": "Chat GPT for Gmail"
     }
   ]
 }
