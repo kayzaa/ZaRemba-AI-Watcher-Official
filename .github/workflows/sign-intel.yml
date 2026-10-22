@@ -1,0 +1,45 @@
+name: Sign threat intelligence
+
+# Every change to intel/threats.json is checked by the quality gate and signed
+# with the ZaRemba intel key. ZaRemba only accepts feeds with a valid signature.
+on:
+  push:
+    branches: [main]
+    paths: ["intel/threats.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sign-intel
+  cancel-in-progress: false
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Quality gate
+        run: python3 .github/scripts/validate_intel.py intel/threats.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Sign
+        env:
+          KEY: ${{ secrets.INTEL_SIGNING_KEY }}
+          PW: ${{ secrets.INTEL_SIGNING_KEY_PASSWORD }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::warning::INTEL_SIGNING_KEY secret is not set yet – feed not signed"; exit 0; fi
+          rm -f intel/threats.json.sig
+          npx --yes @tauri-apps/cli@2.9.4 signer sign -k "$KEY" -p "$PW" intel/threats.json
+          test -s intel/threats.json.sig
+      - name: Publish signature
+        run: |
+          git config user.name "zaremba-intel-bot"
+          git config user.email "zaremba-intel-bot@users.noreply.github.com"
+          [ -f intel/threats.json.sig ] || exit 0
+          git add intel/threats.json.sig
+          git diff --cached --quiet && exit 0
+          git commit -m "Sign threat intelligence $(python3 -c 'import json;print(json.load(open("intel/threats.json"))["updated"])')"
+          git push
