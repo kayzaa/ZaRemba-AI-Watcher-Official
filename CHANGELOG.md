@@ -3,6 +3,17 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.3.0] – Developer Preview – 2026-10
+### Added
+- **AI Network Watch**: `zaremba net [check | watch | allow | disallow | allowed | history]`.
+  - Shows which program is connected to which AI service: OpenAI, ChatGPT, Anthropic, Claude, Google Gemini, Vertex AI,
+    Hugging Face, OpenRouter, Mistral, DeepSeek, Groq, Together AI, Perplexity, xAI, Cohere, Alibaba Qwen, plus local
+    Ollama and LM Studio servers.
+  - Verdicts: expected (browsers, AI apps), script host, unknown, high risk (abused system tools such as wscript/mshta,
+    or programs running from temp/download folders), trusted by you.
+  - Watch mode reports every new program once and keeps a history log.
+  - Exit codes: `2` high risk · `1` unknown program · `0` otherwise.
+
 ## [0.2.0] – Developer Preview – 2026-10
 ### Added
 - **AI Tripwire**: `zaremba tripwire install | status | watch | alerts | remove`.

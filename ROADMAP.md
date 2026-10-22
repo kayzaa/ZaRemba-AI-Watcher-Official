@@ -5,7 +5,7 @@ Dates are targets, not promises – security work gets released when it is ready
 
 **Legend:** ✅ Released · 🔨 In development · 🧪 Testing · 🗓️ Planned · 💡 Exploring
 
-_Last updated: October 2026_
+_Last updated: October 2026 (v0.3.0)_
 
 ---
 
@@ -33,12 +33,14 @@ _Last updated: October 2026_
 - ✅ One command each to install, check, watch and remove; changed decoys are kept as evidence
 - ✅ Tripwire state and alarms show up in every `zaremba scan`
 
-## 🔨 v0.3 – AI Network Watch · *in development*
-- 🗓️ Shows which program talks to which AI service (OpenAI, Anthropic, Google, Hugging Face, OpenRouter …)
-- 🗓️ Alarm when an unknown program secretly calls an AI service – the pattern used by AI-powered malware
-- 🗓️ Allow-list for the AI apps you trust
+## ✅ v0.3 – AI Network Watch · October 2026
+- ✅ Shows which program talks to which AI service – 13 cloud AI providers plus local Ollama and LM Studio servers
+- ✅ Flags unknown programs, script hosts, abused Windows system tools and programs running from temp/download folders – the pattern used by AI-powered malware
+- ✅ Live watch mode with history log
+- ✅ Trusted list for the programs you know
+- ✅ Metadata only – traffic is never read
 
-## 🗓️ v0.4 – Real-time Agent Guard & MCP Firewall
+## 🔨 v0.4 – Real-time Agent Guard & MCP Firewall · *in development*
 - 🗓️ No-go zones for AI agents: wallets, SSH keys, browser passwords, AI keys
 - 🗓️ Blocks dangerous command patterns (download-and-run, secret harvesting)
 - 🗓️ MCP Firewall: sits between your agent and its MCP servers, blocks hidden data leaks
@@ -46,6 +48,7 @@ _Last updated: October 2026_
 
 ## 🗓️ v1.0 – Desktop App · Windows & macOS
 - 🗓️ Tripwire read-detection on Windows and macOS (driver / Endpoint Security)
+- 🗓️ Network Watch from system events instead of polling – catches even very short connections
 - 🗓️ Beautiful app with one-click scan and live protection
 - 🗓️ Background service, tray icon and notifications
 - 🗓️ Signed installers (Windows code signing, Apple notarization)

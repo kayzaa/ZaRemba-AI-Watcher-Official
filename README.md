@@ -7,7 +7,7 @@
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0b1626?style=for-the-badge">
   <img alt="Price" src="https://img.shields.io/badge/price-free-f5c542?style=for-the-badge">
   <img alt="Privacy" src="https://img.shields.io/badge/privacy-100%25%20local-2ea043?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/version-0.2.0%20preview-8957e5?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/version-0.3.0%20preview-8957e5?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@ assistants and abuse permissions you granted. **ZaRemba AI Watcher is built only
 
 ## 📥 Download
 
-> **Developer Preview 0.2** – a fast command-line scanner with AI Tripwire. The desktop app with one-click protection is on the
+> **Developer Preview 0.3** – command-line scanner with AI Tripwire and AI Network Watch. The desktop app with one-click protection is on the
 > [roadmap](ROADMAP.md).
 
 | System | Download | Notes |
@@ -90,8 +90,12 @@ zaremba tripwire install           Lay out decoy wallets, passwords and API keys
 zaremba tripwire watch             Live alarm the moment a decoy is touched
 zaremba tripwire status            Check whether any decoy was changed or deleted
 zaremba tripwire remove            Remove the decoys again
+
+zaremba net                        Which programs are talking to AI services right now?
+zaremba net watch                  Keep watching and report every new program
+zaremba net allow "my-tool"        Trust a program you know
 ```
-New in 0.2: **[AI Tripwire guide](docs/TRIPWIRE.md)**
+Guides: **[AI Tripwire](docs/TRIPWIRE.md)** · **[AI Network Watch](docs/NETWORK_WATCH.md)** (new in 0.3)
 
 Example result:
 ```text
@@ -125,7 +129,7 @@ Exit codes for scripts and CI: `0` nothing to fix · `1` issues found · `2` cri
 | 🔑 **Exposed AI keys** | OpenAI, Anthropic, Google AI, Hugging Face, OpenRouter and GitHub keys lying in shell profiles and `.env` files | ✅ Available |
 | 📦 **Poisoned packages** | Known malicious npm packages (global and in your projects) | ✅ Available |
 | 🪤 **AI Tripwire** | Decoy wallets, passwords and keys that only thieves touch – instant alarm, names the program on Linux | ✅ Available (0.2) |
-| 🌐 **AI Network Watch** | Alerts when an unknown program secretly talks to AI services | 🗓️ Planned |
+| 🌐 **AI Network Watch** | Shows which program talks to which AI service (OpenAI, Anthropic, Gemini, Hugging Face, DeepSeek … and local Ollama/LM Studio) and flags unknown or suspicious ones | ✅ Available (0.3) |
 | 🛑 **Real-time Agent Guard** | Blocks AI agents from touching wallets, SSH keys and browser passwords | 🗓️ Planned |
 | 🖥️ **Desktop app** | One-click protection, tray icon, notifications | 🗓️ Planned |
 | 📱 **Mobile & browser** | Android app, browser extension against hidden AI instructions, iPhone/iPad protection | 🗓️ Planned |
@@ -140,7 +144,8 @@ Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes
 - **Read-only scan.** `zaremba scan` never changes, deletes or moves your files. AI Tripwire only creates its own decoy
   files, never overwrites anything, and removes them again on request.
 - **Secrets stay secret.** Keys are never printed – only a short redacted hint like `sk-pro…(33 chars)`.
-- **No internet needed.** The threat database is built in.
+- **No internet needed.** The threat database is built in. Only `zaremba net` looks up the public addresses of AI
+  services (a DNS lookup) – nothing about you or your device is sent.
 
 Details: **[Privacy policy](PRIVACY.md)**
 
@@ -150,9 +155,9 @@ Details: **[Privacy policy](PRIVACY.md)**
 
 ```text
  ✅ v0.1  AI Inventory Scanner
- ✅ v0.2  AI Tripwire (decoy files)       ← you are here
- 🔨 v0.3  AI Network Watch
- 🗓️ v0.4  Real-time Agent Guard + MCP Firewall
+ ✅ v0.2  AI Tripwire (decoy files)
+ ✅ v0.3  AI Network Watch               ← you are here
+ 🔨 v0.4  Real-time Agent Guard + MCP Firewall
  🗓️ v1.0  Desktop app for Windows & macOS (signed installer)
  🗓️ v1.x  Android · browser extension · iPhone/iPad
 ```

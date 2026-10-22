@@ -1,0 +1,5 @@
+ab93d85455f4febad3a4a9433cd15f4c5396349bff2c8a2689f10b572d9c0640  zaremba-linux-x64.tar.gz
+8f470bee00d46f356909e54887a621683dc764694b627701109d4cf01afd033e  zaremba-macos-apple-silicon.tar.gz
+7c7304914ebc42cd74dfe9cca4e582b1ce77670d821a3a7558c33c40e779d94b  zaremba-macos-intel.tar.gz
+cd083a58cdc47993b91bcce8af94b464419c3a09cac42798ed89d21e4555dae2  zaremba-windows-x64.zip
+b28c63dad4fa84d7860e29cfff69b4834abc3a63bff274804a0237210f285ba4  THIRD_PARTY_NOTICES.txt
