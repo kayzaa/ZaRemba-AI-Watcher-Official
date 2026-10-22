@@ -16,6 +16,7 @@
 </p>
 
 <p align="center">
+  <a href="#%EF%B8%8F-the-desktop-app">Desktop app</a> ·
   <a href="#-download">Download</a> ·
   <a href="#-quick-start">Quick start</a> ·
   <a href="#%EF%B8%8F-what-it-protects-you-from">What it detects</a> ·
@@ -23,6 +24,11 @@
   <a href="docs/DETECTIONS.md">Detection rules</a> ·
   <a href="PRIVACY.md">Privacy</a> ·
   <a href="#-faq">FAQ</a>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/app-protected.png" alt="ZaRemba AI Watcher desktop app – all systems protected" width="100%">
+  <br><sub><b>ZaRemba AI Watcher 1.0 desktop app</b> – one click and every AI agent, MCP server and decoy is under watch.</sub>
 </p>
 
 ---
@@ -43,6 +49,33 @@ extensions. Attackers noticed – and the first real attacks have already happen
 
 Classic antivirus was built for files with fixed fingerprints. AI threats rewrite themselves, hide inside trusted
 assistants and abuse permissions you granted. **ZaRemba AI Watcher is built only for this new kind of threat.**
+
+---
+
+## 🖥️ The desktop app
+
+> **Coming with v1.0** – the installers for Windows and macOS are being built right now. Until then, all protection
+> features are available in the command-line edition below.
+
+One window for everything: a live protection score, one-click protection, real-time alerts and a full history – in a
+calm, dark interface that stays out of your way and lives in your tray.
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/overview-attention.png" alt="Overview with attention needed"><br><sub><b>Overview</b> – the protection score shows exactly what is still exposed. One click fixes it.</sub></td>
+    <td width="50%"><img src="assets/screenshots/app-alarm.png" alt="Live tripwire alarm"><br><sub><b>Live alarms</b> – a program opened a decoy wallet. ZaRemba names it instantly.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/agents.png" alt="AI agents"><br><sub><b>AI Agents</b> – Claude Code, Cursor, Gemini CLI, Windsurf and Copilot CLI protected through their official hooks.</sub></td>
+    <td><img src="assets/screenshots/mcp-firewall.png" alt="MCP Firewall"><br><sub><b>MCP Firewall</b> – dangerous calls, rug pulls and poisoned tools never reach your AI.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/network-watch.png" alt="Network Watch"><br><sub><b>Network Watch</b> – which program talks to which AI service, right now.</sub></td>
+    <td><img src="assets/screenshots/tripwire.png" alt="AI Tripwire"><br><sub><b>AI Tripwire</b> – fake wallets, passwords and keys that only thieves touch.</sub></td>
+  </tr>
+</table>
+
+<sub>Some screens show sample data for illustration.</sub>
 
 ---
 
