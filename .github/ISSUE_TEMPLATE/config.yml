@@ -6,3 +6,9 @@ contact_links:
   - name: 🗺️ Roadmap
     url: https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/blob/main/ROADMAP.md
     about: See what is done, in development and planned.
+  - name: 🙋 Ask a question
+    url: https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions/categories/q-a
+    about: Questions about installing or using ZaRemba – the community and the team answer in Discussions.
+  - name: 💡 Share an idea
+    url: https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions/categories/ideas
+    about: Discuss and upvote ideas for new protection.

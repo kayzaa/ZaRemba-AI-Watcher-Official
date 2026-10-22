@@ -1,0 +1,14 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 💬 Talk about AI security
+        Questions about using ZaRemba go best into **Q&A**, feature wishes into **Ideas**.
+        Bugs, false alarms and new threats have their own [issue forms](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/issues/new/choose).
+        Please follow our [code of conduct](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/blob/main/CODE_OF_CONDUCT.md).
+  - type: textarea
+    id: text
+    attributes:
+      label: Your message
+    validations:
+      required: true

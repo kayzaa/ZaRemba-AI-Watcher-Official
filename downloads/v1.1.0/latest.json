@@ -1,0 +1,23 @@
+{
+  "version": "1.1.0",
+  "notes": "ZaRemba AI Watcher 1.1 \u2013 one-click quarantine and bring your own AI (optional) to explain findings.",
+  "pub_date": "2026-10-22T17:40:14Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTanJyaStwTDVVcmVxcUQwMm9JVDE0ek8vRC8wQTVBYytQQTV0TVN1c2pSdzRXQmRuNHBVOFppQ0QxZmdvZU1WU3NWN09pM1puUFNnWHo5TTFoMGFhSWlwTzhxZUh0QUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjg5ODk0CWZpbGU6WmFSZW1iYSBBSSBXYXRjaGVyXzEuMS4wX3g2NC1zZXR1cC5leGUKVVMrblNWR0U0aysxdzJVTnh0SGlaUUJxbk1xQTFsZ1JCbVlTcUtYbzc4aEFqM3JpUitGazU3RnV0V1FhVHhTNDA3VU5sNVptRkVEbXhtaXcvZS96QkE9PQo=",
+      "url": "https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/download/v1.1.0/ZaRemba-AI-Watcher-windows-x64-setup.exe"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTanJyaStwTDVVcmJhSXFQSDFsa1Y0a0FOMXB4ak8wd1p4TDI3dXYrejBFeXpOUUhkUnRxZU1iV09iVjFOSUFlMGkzTXlZejl0a3lCNGZPNGwxQlNobDJGRG56ZW5qekFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjg5NzEzCWZpbGU6WmFSZW1iYSBBSSBXYXRjaGVyLmFwcC50YXIuZ3oKVjJHNVZ3cmplb1FYaDBqYmR5K20yd08rU0Z4R1RyRHFWNmdIQVRoTi9sTDJsWkx0bm9rK2V3T3YrTE52VDJvUUs3TVd4U2tzanFTR01zemJWbS8rQ3c9PQo=",
+      "url": "https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/download/v1.1.0/ZaRemba-AI-Watcher-macos-apple-silicon.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTanJyaStwTDVVcmRUbHRRemhWUFgzMUpQTkhNU2VxRjVkcDFCL1Z3b2Qvd1pkWWdrck9YOUVCamxaZHI2OHg5eUpCVmY2TGNFdEJDZ1h3aW5zWGo3bElYR3pMWUo4VndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjg5NzU4CWZpbGU6WmFSZW1iYSBBSSBXYXRjaGVyLmFwcC50YXIuZ3oKOUhXR212LzRjZUhOVjhwdjNMa3RSdklFTGdFWVhKTEVWcldyYXJPNFRmalFsNy8wRFBadkNURXREaUIrT3NZZzVza2E2emZXQko5VXNXbXdlbUlwRFE9PQo=",
+      "url": "https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/download/v1.1.0/ZaRemba-AI-Watcher-macos-intel.app.tar.gz"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTanJyaStwTDVVclVZVXJSdWREVzhjZjNlVjhSbU5MUGtWSUlWT2x0L0VTQ294T0N2bTcyUHQ2VDhDTVVRUUdzTis0N0ZEOUV4T0J1clEvODlRMm9XaHp6eGVwL0tQblFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjkwMDM0CWZpbGU6WmFSZW1iYSBBSSBXYXRjaGVyXzEuMS4wX2FtZDY0LkFwcEltYWdlCk1Jc1pRZDRtRnJjQWY2SXN0YmdMc0t3cENjNE5abmIvL1JXNlhWck56NGpDV0RMMmdDclMvSk9MOS90cEg3bUo3amFNSWxaalBYL0g2NU4yaERXUUR3PT0K",
+      "url": "https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/download/v1.1.0/ZaRemba-AI-Watcher-linux-x64.AppImage"
+    }
+  }
+}

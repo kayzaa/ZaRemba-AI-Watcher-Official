@@ -5,7 +5,7 @@ Dates are targets, not promises – security work gets released when it is ready
 
 **Legend:** ✅ Released · 🔨 In development · 🧪 Testing · 🗓️ Planned · 💡 Exploring
 
-_Last updated: October 2026 (v1.0.0)_
+_Last updated: October 2026 (v1.1.0)_
 
 ---
 
@@ -55,7 +55,21 @@ _Last updated: October 2026 (v1.0.0)_
 - ✅ Daily threat-intelligence research team; signed feed delivered automatically to every app
 - ✅ Starts with your computer (optional), English interface
 
-## 🔨 v1.1 – Trust & depth · *in development*
+## ✅ v1.1 – Quarantine & bring your own AI · October 2026
+- ✅ One-click **Quarantine** for malicious MCP servers, skills and packages – restore exactly or delete for good
+- ✅ Optional **automatic quarantine** of known threats from the signed threat database
+- ✅ **Bring your own AI**: Anthropic, OpenAI, Google Gemini, local Ollama or your installed Claude Code explains findings and gives second opinions – you see every word before it is sent, keys stay in your system keychain
+- ✅ Threat updates are future-proof: new kinds of entries never break older versions
+
+## 🧪 v1.2 – Browser extension · *developer preview available*
+- ✅ **Prompt-Injection Shield** for Chrome, Edge, Brave, Opera and Firefox: finds hidden instructions on web pages aimed at AI browsers and assistants, one-click neutralize and restore
+- ✅ **Secret paste guard**: warns before you paste API keys, private keys or passwords into ChatGPT, Claude, Gemini and 13 other AI chats
+- ✅ **Malicious AI extension check**: 34 fake AI extensions caught stealing chats and e-mails, each with its public source
+- ✅ Download on GitHub for developer mode – [install guide](docs/BROWSER_EXTENSION.md)
+- 🔨 Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons (automatic updates)
+- 🗓️ Signed live updates of the malicious-extension list, Firefox extension IDs
+
+## 🗓️ Trust & depth
 - 🗓️ Installers signed with Microsoft and Apple developer certificates (no first-launch warnings)
 - 🗓️ Tripwire read-detection on Windows and macOS (driver / Endpoint Security)
 - 🗓️ Network Watch from system events instead of polling – catches even very short connections
@@ -63,7 +77,6 @@ _Last updated: October 2026 (v1.0.0)_
 - 🗓️ German interface
 
 ## 🗓️ v1.x – Every device
-- 🗓️ **Browser extension** (Chrome, Edge, Firefox, Safari): Prompt-Injection Shield – spots hidden instructions aimed at AI browsers
 - 🗓️ **Android**: Fake-AI-app check, AI network watch, scam protection
 - 🗓️ **iPhone & iPad**: Safari protection, link and media checks (Apple does not allow scanning other apps)
 - 💡 **Deepfake & voice-clone warning** for calls, videos and voice messages
@@ -76,5 +89,5 @@ _Last updated: October 2026 (v1.0.0)_
 ---
 
 ### Have an idea or need something first?
-[Suggest a feature](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/issues/new?template=feature_request.yml) –
+[Share an idea in Discussions](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions/categories/ideas) or [suggest a feature](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/issues/new?template=feature_request.yml) –
 the most requested features move up the list.

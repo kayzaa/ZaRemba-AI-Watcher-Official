@@ -1,0 +1,44 @@
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 💡 Shape what ZaRemba protects next
+        Check the [roadmap](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/blob/main/ROADMAP.md) first – maybe it is
+        already planned. Upvote ideas you like with 👍; the most wanted ones move up.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What AI risk or problem should ZaRemba solve?
+      description: Describe the situation, not the solution. Real incidents with a public source help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How could ZaRemba help? What would you see or click?
+    validations:
+      required: true
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who would benefit?
+      multiple: true
+      options:
+        - People who use AI coding agents (Claude Code, Cursor, Copilot …)
+        - People who use AI chat apps and AI browsers
+        - Families and non-technical users
+        - Companies and teams
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Browser
+        - Android
+        - iPhone / iPad

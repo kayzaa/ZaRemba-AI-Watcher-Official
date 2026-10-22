@@ -1,0 +1,58 @@
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🙋 Ask the community
+        Before you post, take a quick look at the [FAQ](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official#-faq),
+        the [installation guide](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/blob/main/docs/INSTALL.md) and the
+        [detection rules](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/blob/main/docs/DETECTIONS.md).
+
+        ⚠️ **Never post API keys, passwords, wallet phrases or full file paths with your user name.**
+        Found a vulnerability in ZaRemba itself? Report it [privately](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/security/advisories/new).
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What do you want to know or achieve?
+    validations:
+      required: true
+  - type: dropdown
+    id: product
+    attributes:
+      label: Which part of ZaRemba?
+      options:
+        - Desktop app
+        - Command line (zaremba)
+        - Agent Guard
+        - MCP Firewall
+        - AI Tripwire
+        - Network Watch
+        - Quarantine
+        - Bring your own AI
+        - Threat intelligence / updates
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Linux
+        - Other
+  - type: input
+    id: version
+    attributes:
+      label: ZaRemba version
+      description: Shown at the bottom left of the app, or run `zaremba --version`.
+      placeholder: "1.1.0"
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried so far?
+      description: Optional – screenshots welcome (hide personal details).

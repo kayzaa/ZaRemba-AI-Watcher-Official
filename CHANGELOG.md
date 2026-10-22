@@ -3,6 +3,25 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.1.0] – 2026-10
+### Added
+- **Quarantine** for malicious findings: one click takes an MCP server, agent skill or poisoned package folder out of
+  action; **Restore** puts it back exactly, **Delete** (two clicks) removes it for good. New **Quarantine** page.
+- **Automatic quarantine** (optional, switched on by *Protect everything*): critical matches from the signed threat
+  database are quarantined as soon as they are found. Nothing is ever deleted automatically.
+- **Bring your own AI** (optional): connect Anthropic, OpenAI, Google Gemini, a local Ollama model or your installed
+  Claude Code. **Ask AI** explains any finding in plain language; **Second opinion** rates a skill or MCP server as
+  safe / suspicious / malicious. You see the exact text before it is sent, secrets are removed first, keys live in the
+  system keychain, and the AI only advises.
+- Command line: `zaremba quarantine list | auto | restore | delete`.
+- **Browser extension 1.2.0 – developer preview** (Chrome, Edge, Brave, Opera, Firefox), attached to this release:
+  Prompt-Injection Shield (hidden instructions for AI assistants: hidden/tiny/transparent/off-screen text, comments,
+  image descriptions, invisible Unicode characters; neutralize and restore), secret paste guard for 16 AI chats,
+  check against 34 known malicious AI extensions. See [Browser extension](docs/BROWSER_EXTENSION.md).
+### Changed
+- Threat-intelligence files may contain new kinds of entries in the future; this version safely ignores kinds it does
+  not know instead of rejecting the whole file.
+
 ## [1.0.0] – 2026-10
 ### Added
 - **Desktop app** for Windows, macOS (Apple Silicon + Intel) and Linux: overview with protection score,

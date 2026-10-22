@@ -7,7 +7,7 @@
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0b1626?style=for-the-badge">
   <img alt="Price" src="https://img.shields.io/badge/price-free-f5c542?style=for-the-badge">
   <img alt="Privacy" src="https://img.shields.io/badge/privacy-100%25%20local-2ea043?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/version-1.0.0-8957e5?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/version-1.1.0-8957e5?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -23,12 +23,13 @@
   <a href="ROADMAP.md">Roadmap</a> ·
   <a href="docs/DETECTIONS.md">Detection rules</a> ·
   <a href="PRIVACY.md">Privacy</a> ·
-  <a href="#-faq">FAQ</a>
+  <a href="#-faq">FAQ</a> ·
+  <a href="https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions">Community</a>
 </p>
 
 <p align="center">
   <img src="assets/screenshots/app-protected.png" alt="ZaRemba AI Watcher desktop app – all systems protected" width="100%">
-  <br><sub><b>ZaRemba AI Watcher 1.0 desktop app</b> – one click and every AI agent, MCP server and decoy is under watch.</sub>
+  <br><sub><b>ZaRemba AI Watcher desktop app</b> – one click and every AI agent, MCP server and decoy is under watch.</sub>
 </p>
 
 ---
@@ -70,6 +71,14 @@ calm, dark interface that stays out of your way and lives in your tray.
     <td><img src="assets/screenshots/network-watch.png" alt="Network Watch"><br><sub><b>Network Watch</b> – which program talks to which AI service, right now.</sub></td>
     <td><img src="assets/screenshots/tripwire.png" alt="AI Tripwire"><br><sub><b>AI Tripwire</b> – fake wallets, passwords and keys that only thieves touch.</sub></td>
   </tr>
+  <tr>
+    <td><img src="assets/screenshots/ask-ai.png" alt="Ask AI explains a finding"><br><sub><b>Ask AI</b> <i>(new in 1.1)</i> – your own AI explains a threat in plain language. You see every word before it is sent.</sub></td>
+    <td><img src="assets/screenshots/quarantine.png" alt="Quarantine"><br><sub><b>Quarantine</b> <i>(new in 1.1)</i> – threats taken out of action. Restore exactly or delete for good.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/browser-shield.png" alt="Browser extension: hidden AI instructions"><br><sub><b>Browser extension</b> <i>(preview)</i> – hidden instructions for AI assistants found and neutralized.</sub></td>
+    <td><img src="assets/screenshots/browser-paste-guard.png" alt="Browser extension: secret paste guard"><br><sub><b>Secret paste guard</b> <i>(preview)</i> – stops API keys and passwords before they reach an AI chat.</sub></td>
+  </tr>
 </table>
 
 <sub>Some screens show sample data for illustration.</sub>
@@ -89,6 +98,15 @@ calm, dark interface that stays out of your way and lives in your tray.
 
 Install, click **Protect everything** – done. ZaRemba keeps itself and its threat intelligence up to date automatically
 (signed updates only). Step-by-step help: **[Installation guide](docs/INSTALL.md)**.
+
+### 🧩 Browser extension – Prompt-Injection Shield *(developer preview)*
+| Browser | Download | |
+|---|---|---|
+| 🌐 **Chrome · Edge · Brave · Opera** | [**ZaRemba-AI-Watcher-browser-chrome-edge.zip**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-browser-chrome-edge.zip) | Unzip → extensions page → *Developer mode* → *Load unpacked* |
+| 🦊 **Firefox** 142+ | [**ZaRemba-AI-Watcher-browser-firefox.zip**](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/releases/latest/download/ZaRemba-AI-Watcher-browser-firefox.zip) | `about:debugging` → *Load Temporary Add-on* (until restart) |
+
+Finds hidden instructions aimed at AI browsers, stops secrets from being pasted into AI chats and checks for known
+malicious AI extensions. Step by step: **[Browser extension guide](docs/BROWSER_EXTENSION.md)** · Store versions are coming.
 
 ### ⌨️ Command line (for developers, CI and servers)
 | System | Download |
@@ -178,7 +196,10 @@ Exit codes for scripts and CI: `0` nothing to fix · `1` issues found · `2` cri
 | 🔥 **MCP Firewall** | Sits between any AI app and its MCP servers: blocks dangerous calls, catches rug pulls and poisoned tool descriptions | ✅ Available (0.4) |
 | 🖥️ **Desktop app** | One-click protection, live score, tray icon, notifications, signed automatic updates | ✅ Available (1.0) |
 | 🧠 **Daily threat intelligence** | A research team adds newly disclosed malicious MCP servers, skills and packages every day – signed, delivered automatically | ✅ Available (1.0) |
-| 📱 **Mobile & browser** | Android app, browser extension against hidden AI instructions, iPhone/iPad protection | 🗓️ Planned |
+| 🧊 **Quarantine** | One click takes a malicious MCP server, skill or package out of action – restore exactly or delete for good; optional automatic quarantine of known threats | ✅ Available (1.1) |
+| 🤖 **Bring your own AI** | Optional: Claude, ChatGPT/OpenAI, Gemini, local Ollama or your installed Claude Code explains findings and gives second opinions – you see every word before it is sent | ✅ Available (1.1) |
+| 🧩 **Browser extension** | [Prompt-Injection Shield](docs/BROWSER_EXTENSION.md) against hidden AI instructions, secret paste guard for 16 AI chats, check for 34 known malicious AI extensions (Chrome, Edge, Brave, Opera, Firefox) | 🧪 Developer preview (1.2) |
+| 📱 **Phone & tablet** | Android app, iPhone/iPad protection | 🗓️ Planned |
 
 Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes next: **[Roadmap](ROADMAP.md)**
 
@@ -187,9 +208,12 @@ Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes
 ## 🔒 Privacy by design
 
 - **Runs 100 % on your device.** No account, no cloud upload, no telemetry.
+- **AI is optional and yours.** Connect your own AI only if you want explanations. ZaRemba shows the exact text,
+  removes secrets first and sends nothing until you click **Send to AI** – directly to the provider you chose.
 - **Read-only scan.** `zaremba scan` never changes, deletes or moves your files. AI Tripwire only creates its own decoy
   files. Agent Guard and MCP Firewall only add their own entries to your AI apps' settings, keep a backup, and remove
-  them again exactly.
+  them again exactly. Quarantine moves an item only when you ask (or for known threats, if you switch that on) and
+  can always restore it.
 - **Secrets stay secret.** Keys are never printed – only a short redacted hint like `sk-pro…(33 chars)`.
 - **Nothing about you is sent.** ZaRemba only *downloads*: signed app updates and the signed threat database from this
   GitHub repository, and DNS lookups of public AI service names for Network Watch. No uploads, no telemetry.
@@ -205,9 +229,10 @@ Details: **[Privacy policy](PRIVACY.md)**
  ✅ v0.2  AI Tripwire (decoy files)
  ✅ v0.3  AI Network Watch
  ✅ v0.4  Real-time Agent Guard + MCP Firewall
- ✅ v1.0  Desktop app · automatic updates · daily threat intelligence   ← you are here
- 🔨 v1.1  Code-signed installers · read-detection on Windows & macOS
- 🗓️ v1.x  Browser extension · Android · iPhone/iPad
+ ✅ v1.0  Desktop app · automatic updates · daily threat intelligence
+ ✅ v1.1  Quarantine · bring your own AI                                  ← you are here
+ 🧪 v1.2  Browser extension – developer preview on GitHub, stores next
+ 🗓️ v1.x  Code-signed installers · Android · iPhone/iPad
 ```
 
 Follow progress in the **[full roadmap](ROADMAP.md)** and the **[changelog](CHANGELOG.md)**.
@@ -240,7 +265,7 @@ private repository.
 <details>
 <summary><b>Windows says "Windows protected your PC" / macOS says the app can't be checked.</b></summary>
 
-The installers are not yet code-signed with a Microsoft/Apple certificate (planned for v1.1). Verify the SHA-256
+The installers are not yet code-signed with a Microsoft/Apple certificate (planned). Verify the SHA-256
 checksum from the release page, then follow the [installation guide](docs/INSTALL.md#first-launch-warnings).
 App updates are always signed with ZaRemba's own release key and verified before installing.
 </details>
@@ -263,6 +288,7 @@ We review every report.
 
 ## 🤝 Help make AI safer
 
+- 💬 [Join the discussions](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions) – [ask a question](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions/categories/q-a), [share an idea](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions/categories/ideas), [show your setup](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/discussions/categories/show-and-tell)
 - 🐞 [Report a bug](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/issues/new?template=bug_report.yml)
 - 🎯 [Report a false positive](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/issues/new?template=false_positive.yml)
 - ☠️ [Report a malicious AI extension, skill or package](https://github.com/kayzaa/ZaRemba-AI-Watcher-Official/issues/new?template=threat_report.yml)

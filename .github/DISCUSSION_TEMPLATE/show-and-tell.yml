@@ -1,0 +1,20 @@
+title: "[Show & tell] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🙌 Show how you use ZaRemba
+        Your setup, a threat it caught, a tip for other users, a video or blog post – we would love to see it.
+
+        ⚠️ Remove API keys, passwords, user names and private paths from screenshots before posting.
+  - type: textarea
+    id: story
+    attributes:
+      label: What do you want to share?
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link (optional)
+      description: Blog post, video or thread.

@@ -37,5 +37,7 @@ jobs:
             gh release edit "$VERSION" --notes-file "$notes"
             gh release upload "$VERSION" "$dir"/* --clobber
           else
-            gh release create "$VERSION" "$dir"/* --title "ZaRemba AI Watcher ${VERSION#v} – Developer Preview" --notes-file "$notes" --target "$GITHUB_SHA" --latest
+            title="ZaRemba AI Watcher ${VERSION#v}"
+            case "$VERSION" in v0.*) title="$title – Developer Preview" ;; esac
+            gh release create "$VERSION" "$dir"/* --title "$title" --notes-file "$notes" --target "$GITHUB_SHA" --latest
           fi
