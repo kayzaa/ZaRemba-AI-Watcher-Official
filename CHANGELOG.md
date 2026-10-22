@@ -3,6 +3,20 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.0] – 2026-10
+### Added
+- **Injection Shield for agents** (`ZRW-GRD-020`): Agent Guard now also hooks `PostToolUse` (Claude Code) and
+  `AfterTool` (Gemini CLI, experimental). Tool results with hidden instructions or invisible-character payloads are
+  flagged; the agent is told to treat them as data and you see a notice. Existing installs are upgraded automatically.
+- **Agent forensics** (`ZRW-AUD-001…003`): every scan reviews Claude Code sessions of the last 90 days.
+- **Deep scan**: poisoned agent rules files (`ZRW-MEM-001`), IDE extensions with invisible code or named in GlassWorm
+  reports (`ZRW-IDE-001/002`), malicious AI model files (`ZRW-MDL-001/002`), AI-steered malware scripts and AI CLIs
+  started without safety prompts (`ZRW-MAL-001/002`).
+- **Attack Lab**: `zaremba lab` – 26 harmless attack simulations, 26 detected. See [Attack Lab](docs/ATTACK_LAB.md).
+### Changed
+- Example/dummy keys from documentation are no longer reported as secrets.
+- Text written with `echo` / `printf` is treated as data, not as a command, unless it is piped into a shell.
+
 ## [Android 1.0.0] – 2026-10
 ### Added
 - **ZaRemba AI Watcher for Android** (APK, Android 8+): fake AI app detection, known malicious apps, apps from

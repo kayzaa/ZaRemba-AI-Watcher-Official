@@ -5,7 +5,7 @@ Dates are targets, not promises – security work gets released when it is ready
 
 **Legend:** ✅ Released · 🔨 In development · 🧪 Testing · 🗓️ Planned · 💡 Exploring
 
-_Last updated: October 2026 (v1.1.0)_
+_Last updated: October 2026 (v1.2.0)_
 
 ---
 
@@ -61,7 +61,14 @@ _Last updated: October 2026 (v1.1.0)_
 - ✅ **Bring your own AI**: Anthropic, OpenAI, Google Gemini, local Ollama or your installed Claude Code explains findings and gives second opinions – you see every word before it is sent, keys stay in your system keychain
 - ✅ Threat updates are future-proof: new kinds of entries never break older versions
 
-## 🧪 v1.2 – Browser extension · *developer preview available*
+## ✅ v1.2 – Deep defense · October 2026
+- ✅ **Injection Shield for agents**: Claude Code (verified) and Gemini CLI check every tool result for hidden instructions
+- ✅ **Agent forensics**: past sessions checked for injected content, dangerous actions and keys left in the chat history
+- ✅ **Deep scan**: poisoned agent rules files, IDE extensions with invisible code (GlassWorm), malicious AI model files (pickle, nullifAI), AI-steered malware scripts (LameHug / PROMPTFLUX pattern)
+- ✅ **Attack Lab** (`zaremba lab`): 26 harmless attack simulations mapped to the OWASP Top 10 for Agentic Applications – 26 of 26 detected
+- ✅ Fewer false alarms: example keys in docs are ignored; text written to files is not treated as a command
+
+## 🧪 Browser extension · *developer preview available*
 - ✅ **Prompt-Injection Shield** for Chrome, Edge, Brave, Opera and Firefox: finds hidden instructions on web pages aimed at AI browsers and assistants, one-click neutralize and restore
 - ✅ **Secret paste guard**: warns before you paste API keys, private keys or passwords into ChatGPT, Claude, Gemini and 13 other AI chats
 - ✅ **Malicious AI extension check**: 34 fake AI extensions caught stealing chats and e-mails, each with its public source

@@ -7,7 +7,7 @@
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0b1626?style=for-the-badge">
   <img alt="Price" src="https://img.shields.io/badge/price-free-f5c542?style=for-the-badge">
   <img alt="Privacy" src="https://img.shields.io/badge/privacy-100%25%20local-2ea043?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/version-1.1.0-8957e5?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/version-1.2.0-8957e5?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -214,11 +214,22 @@ Exit codes for scripts and CI: `0` nothing to fix · `1` issues found · `2` cri
 | 🧠 **Daily threat intelligence** | A research team adds newly disclosed malicious MCP servers, skills and packages every day – signed, delivered automatically | ✅ Available (1.0) |
 | 🧊 **Quarantine** | One click takes a malicious MCP server, skill or package out of action – restore exactly or delete for good; optional automatic quarantine of known threats | ✅ Available (1.1) |
 | 🤖 **Bring your own AI** | Optional: Claude, ChatGPT/OpenAI, Gemini, local Ollama or your installed Claude Code explains findings and gives second opinions – you see every word before it is sent | ✅ Available (1.1) |
+| 🧠 **Injection Shield for agents** | Every result your AI agent receives – web pages, files, MCP answers – is checked for hidden instructions; the agent is told to treat them as data | ✅ Available (1.2) |
+| 🕵️ **Agent forensics** | Looks back through past agent sessions: hidden instructions the agent read, dangerous actions it took, keys left in its chat history | ✅ Available (1.2) |
+| 🔬 **Deep scan** | Poisoned agent rules files (`CLAUDE.md`, `.cursorrules` …), IDE extensions with invisible code (GlassWorm), AI model files that run code when loaded, AI-steered malware scripts (LameHug pattern) | ✅ Available (1.2) |
 | 🧩 **Browser extension** | [Prompt-Injection Shield](docs/BROWSER_EXTENSION.md) against hidden AI instructions, secret paste guard for 16 AI chats, check for 34 known malicious AI extensions (Chrome, Edge, Brave, Opera, Firefox) | 🧪 Developer preview (1.2) |
 | 🤖 **Android app** | [Fake AI app detection](docs/ANDROID.md) (ChatGPT, DeepSeek, Gemini, Claude …), screen-control and SMS-stealing apps, hidden AI instructions in any text | ✅ Available (1.0) |
 | 🍏 **iPhone & iPad** | Safari protection, link and message checks | 🗓️ Planned |
 
 Full list with rule IDs: **[Detection rules](docs/DETECTIONS.md)** · What comes next: **[Roadmap](ROADMAP.md)**
+
+### 🧪 Measured, not claimed
+No security product can promise 100 %. Instead, ZaRemba ships an **Attack Lab**: harmless simulations of every class of
+AI attack we know of, mapped to the OWASP Top 10 for Agentic Applications, run through the real engines with every build.
+
+**ZaRemba 1.2 detects 26 of 26 simulated attack classes** – from hidden instructions and poisoned MCP servers to fake
+skills, GlassWorm-style extensions, booby-trapped model files and AI-steered malware. Run `zaremba lab` to check it on your
+own computer. This is our own lab, not an independent test – details and limits: **[Attack Lab](docs/ATTACK_LAB.md)**.
 
 ---
 
@@ -247,9 +258,8 @@ Details: **[Privacy policy](PRIVACY.md)**
  ✅ v0.3  AI Network Watch
  ✅ v0.4  Real-time Agent Guard + MCP Firewall
  ✅ v1.0  Desktop app · automatic updates · daily threat intelligence
- ✅ v1.1  Quarantine · bring your own AI                                  ← you are here
- 🧪 v1.2  Browser extension – developer preview on GitHub, stores next
- ✅ Android app (APK)
+ ✅ v1.1  Quarantine · bring your own AI · Android app · browser extension preview
+ ✅ v1.2  Deep defense: Injection Shield for agents · forensics · deep scan · Attack Lab 26/26   ← you are here
  🗓️ v1.x  Code-signed installers · iPhone/iPad
 ```
 
