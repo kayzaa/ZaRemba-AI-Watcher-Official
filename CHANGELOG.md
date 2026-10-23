@@ -3,6 +3,17 @@
 All notable changes to ZaRemba AI Watcher are listed here.
 Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.1] – 2026-10
+### Added
+- **Every finding is clickable**: a detail window explains what was found and what to do, shows where it is
+  (**Show in folder**), and offers the fitting action – **Quarantine**, **Explain with AI** or **Mark as reviewed**.
+- **Mark as reviewed**: findings you checked (for example things an agent did in a past session) leave the open list and
+  no longer lower your protection score. They stay under *Scan → Reviewed* and can be shown again at any time.
+- Quarantine now also works for single files (AI-steered malware scripts, booby-trapped model files, chat histories with
+  API keys) and for malicious IDE extensions.
+### Changed
+- Automatic quarantine acts only on confirmed threats from the signed threat list, never on heuristic findings.
+
 ## [1.3.0] – 2026-10 · Browser extension 1.3.0 · Android 1.1.0
 ### Added
 - **One signed threat list for every device**: the threat database now also lists malicious IDE extensions, browser
